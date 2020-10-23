@@ -13,7 +13,7 @@ const Hero = () => {
             <UFO src={ufo} alt="ufo"/>
                 <HeroContent>
                     <Moon src={moon} alt="moon"/>
-                    <HeroH1>Hello, My name is Matthew and I am a full stack JavaScript developer</HeroH1>
+                    <HeroH1>Hello, My name is Matthew and I am a full stack JavaScript developer.</HeroH1>
                 </HeroContent>
         </HeroContainer>
     )

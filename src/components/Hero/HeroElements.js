@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    min-height: calc("100vh - 80px");
+    min-height: calc(100vh - 80px);
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -51,7 +51,7 @@ export const UFO = styled.img`
     animation: ${flyby} 45s linear infinite;
 `
 export const HeroContent = styled.div`
-    min-height: 80vh;
+    height: calc(100vh - 80px);
     background: transparent;
     z-index: 3;
     max-width: 1200px;
@@ -63,11 +63,13 @@ export const HeroContent = styled.div`
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
+      justify-content: flex-start;
     }
 `
 export const HeroH1 = styled.h1`
     color: #bebab4;
-    font-size: 40px;
+    font-size: 36px;
+    padding: 40px;
 
     @media screen and (max-width: 768px) {
       font-size: 32px
