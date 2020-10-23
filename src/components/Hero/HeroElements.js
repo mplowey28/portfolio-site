@@ -11,9 +11,28 @@ export const HeroContainer = styled.div`
     z-index: 1;
     overflow: hidden;
 `
+export const HeroBg = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`
+
+export const VideoBg = styled.video`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #020104;
+`
+
 const flyby = keyframes`
   from {
-    transform: translateX(-500)
+    transform: translateX(-100)
   }
 
   to {
@@ -22,6 +41,7 @@ const flyby = keyframes`
 `;
 
 export const UFO = styled.img`
+    z-index: 4;
     background: transparent;
     position: absolute;
     top: 0;
@@ -30,17 +50,35 @@ export const UFO = styled.img`
     width: 40px;
     animation: ${flyby} 45s linear infinite;
 `
-export const HeroElements = styled.div`
+export const HeroContent = styled.div`
+    min-height: 80vh;
+    background: transparent;
+    z-index: 3;
+    max-width: 1200px;
+    padding: 8px 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
 `
 export const HeroH1 = styled.h1`
     color: #bebab4;
-    font-size: 2rem;
+    font-size: 40px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 26px
+    }
 `
-export const Moon = styled.div`
-    height: 400px;
-    width: 400px;
+export const Moon = styled.img`
+    background: transparent;
+    height: 300px;
+    width: 300px;
 `

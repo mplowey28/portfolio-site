@@ -1,16 +1,20 @@
 import React from 'react'
-import { HeroContainer,  Moon, UFO, HeroElements, HeroH1 } from './HeroElements'
+import Video from '../../videos/video.mp4'
+import { HeroContainer, HeroBg, VideoBg,  Moon, UFO, HeroContent, HeroH1 } from './HeroElements'
 import moon from '../../assests/images/moon.svg'
 import ufo from '../../assests/images/ufo.svg'
 
 const Hero = () => {
     return (
         <HeroContainer>
+            <HeroBg>
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+            </HeroBg>
             <UFO src={ufo} alt="ufo"/>
-            <HeroElements>
-            <Moon><img src={moon} alt="moon"/></Moon>
-            <HeroH1>Hello, My name is Matthew and I am a full stack JavaScript developer</HeroH1>
-            </HeroElements>
+                <HeroContent>
+                    <Moon src={moon} alt="moon"/>
+                    <HeroH1>Hello, My name is Matthew and I am a full stack JavaScript developer</HeroH1>
+                </HeroContent>
         </HeroContainer>
     )
 }
