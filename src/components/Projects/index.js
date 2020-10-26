@@ -1,10 +1,11 @@
 import React from 'react'
+import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsImg, ProjectsH2, ProjectsP} from './ProjectsElements'
 
 const Projects = () => {
     return (
         <ProjectsContainer id="projects">
             <ProjectsH1>Projects</ProjectsH1>
-            <ProjectWrapper>
+            <ProjectsWrapper>
                 <ProjectsCard>
                     <ProjectsImg />
                     <ProjectsH2>Project 1</ProjectsH2>
@@ -35,7 +36,7 @@ const Projects = () => {
                     <ProjectsH2>Project 6</ProjectsH2>
                     <ProjectsP>Todo List made with TypeScript</ProjectsP>
                 </ProjectsCard>
-            </ProjectWrapper>
+            </ProjectsWrapper>
         </ProjectsContainer>
     )
 }
