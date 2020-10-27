@@ -4,10 +4,6 @@ export const InfoContainer = styled.div`
     padding-top: 80px;
     color: #bebab4;
     background: #020104;
-
-    @media screen and (max-width: 768px) {
-        padding: 100px 0;
-    }
 `
 
 export const InfoWrapper = styled.div`
