@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 500px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -46,19 +46,16 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0px;
-    padding-bottom: 60px;
 `
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.1px;
-    font-weight: 600;
+    padding-top: 40px;
+    font-size: 2.5rem;
     color: #f7f7f6;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
-        font-size: 32px
+        font-size: 2rem;
     }
 `
 

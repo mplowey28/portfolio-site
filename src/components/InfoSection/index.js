@@ -5,6 +5,7 @@ const InfoSection = ({ id, imgStart, headline, description, img, alt }) => {
     return (
         <>
             <InfoContainer id={id}>
+            <Heading>{headline}</Heading>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
@@ -14,7 +15,6 @@ const InfoSection = ({ id, imgStart, headline, description, img, alt }) => {
                         </Column1>
                         <Column2>
                             <TextWrapper>
-                                <Heading>{headline}</Heading>
                                 <SubTitle>{description}</SubTitle>
                             </TextWrapper>
                         </Column2>
