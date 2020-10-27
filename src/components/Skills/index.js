@@ -3,7 +3,7 @@ import { SkillsContainer, SkillsH1, SkillsWrapper, SkillsCard, SkillsImg, Skills
 
 const Skills = () => {
     return (
-        <SkillsContainer id="Skills">
+        <SkillsContainer id="skills">
             <SkillsH1>Skills</SkillsH1>
             <SkillsWrapper>
                 <SkillsCard>

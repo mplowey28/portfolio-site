@@ -5,7 +5,6 @@ import { Link as LinkS } from 'react-scroll';
 export const Nav = styled.nav`
     background: #020104;
     height: 60px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +26,7 @@ export const NavbarContainer = styled.div`
     padding: 0 24px;
     max-width: 1100px;
 `
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
     color: #f7f7f6;
     justify-self: flex-start;
     cursor: pointer;

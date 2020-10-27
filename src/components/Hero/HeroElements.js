@@ -79,6 +79,18 @@ export const HeroH1 = styled.h1`
       font-size: 26px
     }
 `
+export const NameSpan = styled.span`
+  color: #f7f7f6;
+    font-size: 36px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 26px
+    }
+`
 export const Moon = styled.img`
     background: transparent;
     height: 300px;

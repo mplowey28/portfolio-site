@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import FooterImg from '../../assests/images/footer.svg'
 import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
 
 export const FooterContainer = styled.div`
+    background: #020104;
+`
+export const FooterWrapper = styled.div`
     background: url(${FooterImg});
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +13,7 @@ export const FooterContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 200px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
