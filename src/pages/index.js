@@ -7,6 +7,8 @@ import Projects from '../components/Projects'
 import SideBar from '../components/SideBar'
 import Skills from '../components/Skills'
 import Footer from '../components/Footer'
+import Experience from '../components/Experience'
+import Contact from '../components/Contact'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -23,6 +25,8 @@ const Home = () => {
           <InfoSection {...homeObjOne} />
           <Projects />
           <Skills />
+          <Experience />
+          <Contact />
           <Footer />
         </>
     )
