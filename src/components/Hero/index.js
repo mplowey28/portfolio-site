@@ -12,8 +12,8 @@ const Hero = () => {
             </HeroBg>
             <UFO src={ufo} alt="ufo"/>
                 <HeroContent>
-                    <Moon src={moon} alt="moon"/>
                     <HeroH1>Hello, My name is Matthew and I am a full stack JavaScript developer.</HeroH1>
+                    <Moon src={moon} alt="moon"/>
                 </HeroContent>
         </HeroContainer>
     )

@@ -8,15 +8,15 @@ const InfoSection = ({ id, imgStart, headline, description, img, alt }) => {
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
+                        <ImgWrap>
+                                <Img src={img} alt={alt}/>
+                            </ImgWrap>
+                        </Column1>
+                        <Column2>
                             <TextWrapper>
                                 <Heading>{headline}</Heading>
                                 <SubTitle>{description}</SubTitle>
                             </TextWrapper>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={img} alt={alt}/>
-                            </ImgWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
