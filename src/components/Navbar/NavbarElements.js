@@ -42,6 +42,7 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px){
+        color: #f7f7f6;
         display: block;
         position: absolute;
         top: 0;
@@ -49,7 +50,6 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #f7f7f6;
     }
 `
 export const NavMenu = styled.ul`
