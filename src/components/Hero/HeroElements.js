@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
     background: #020104;
@@ -10,6 +11,17 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
     overflow: hidden;
+
+    :before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2)0%, transparent 100%);
+      z-index: 2;
+    }
 `
 export const HeroBg = styled.div`
   position: absolute;
@@ -51,7 +63,6 @@ export const UFO = styled.img`
     animation: ${flyby} 45s linear infinite;
 `
 export const HeroContent = styled.div`
-    height: calc(100vh - 80px);
     background: transparent;
     z-index: 3;
     max-width: 1200px;
@@ -65,6 +76,17 @@ export const HeroContent = styled.div`
       flex-direction: column;
       justify-content: flex-start;
     }
+`
+export const HeroContentWrapper = styled.div`
+  background: transparent;
+    z-index: 3;
+    max-width: 600px;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 `
 export const HeroH1 = styled.h1`
     color: #bebab4;
@@ -90,6 +112,22 @@ export const NameSpan = styled.span`
     @media screen and (max-width: 480px) {
       font-size: 26px
     }
+`
+
+export const HeroBtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 20px
+`
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 20px;
 `
 export const Moon = styled.img`
     background: transparent;
