@@ -13,7 +13,7 @@ export const SkillsContainer = styled.div`
 	}
 
 	@media screen and (max-width: 480px) {
-		height: 600px;
+		height: 1000px;
 	}
 `;
 
