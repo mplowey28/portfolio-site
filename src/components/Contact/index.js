@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ContactContainer, ContactH1, ContactForm, ContactInput, ContactTextArea } from './ContactElements'
+import { ContactContainer, ContactH1, ContactForm, ContactInput, ContactTextArea, FormButton } from './ContactElements'
 
 const encode = (data) => {
     return Object.keys(data)
@@ -32,9 +32,7 @@ const encode = (data) => {
                 <ContactInput type="text" name="name" value={name} onChange={handleChange} placeholder="Your name"/>
                 <ContactInput type="email" name="email" value={email} onChange={handleChange} placeholder="Your email" />
                 <ContactTextArea name="message" value={message} onChange={handleChange} placeholder="Message"/>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+                <FormButton type="submit">Send</FormButton>
             </ContactForm>
         </ContactContainer>
       );

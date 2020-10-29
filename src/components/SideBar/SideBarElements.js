@@ -60,3 +60,17 @@ export const SideBarLink = styled(LinkS)`
         transition: 0.2s ease-in-out;
     }
 `
+
+export const LinksWrapper = styled.div `
+    justify-content: center;
+    align-items: center;
+`
+
+export const LinkedIn = styled.img`
+    height: 40px;
+    width: 40px;
+`
+export const GitHub = styled.img`
+    height: 40px;
+    width: 40px;
+`

@@ -57,7 +57,7 @@ export const ProjectsCard = styled.div`
 
 export const ProjectsImg = styled.img`
     height: 160px;
-    width: 160px;
+    width: 100%;
     margin-bottom: 10px;
 `
 

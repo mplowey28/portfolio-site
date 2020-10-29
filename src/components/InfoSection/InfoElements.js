@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    padding-top: 40px;
     color: #bebab4;
     background: #020104;
 `

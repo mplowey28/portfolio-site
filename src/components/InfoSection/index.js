@@ -9,7 +9,7 @@ const InfoSection = ({ id, imgStart, headline, description, img, alt }) => {
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
-                        <ImgWrap>
+                            <ImgWrap>
                                 <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column1>
