@@ -27,12 +27,12 @@ const InfoSection = ({ id, imgStart, headline, img, alt }) => {
 						<Column2>
 							<TextWrapper>
 								<SubTitle>
-									I am an experienced Full Stack JavaScript Developer with a
+									I am an experienced full stack JavaScript Developer with a
 									demonstrated history of working with React, React Native,
 									Node.js, Express, and Firebase. <br /> <br />
-									Before becoming a developer, I worked as researcher and
-									teacher who developed a strong interest in development through
-									hobby coding and through my work as a researcher. <br />{" "}
+									Before becoming a developer, I worked as a researcher and
+									teacher who acquired a strong interest in development through
+									hobby coding and through my work as a researcher. <br />
 									<br />I enjoy communicating technical concepts and developing
 									apps and services that are both user-friendly and visually
 									appealing.

@@ -34,7 +34,7 @@ const Hero = () => {
 			<HeroContent>
 				<HeroContentWrapper>
 					<HeroH1>
-						Hello, My name is <NameSpan>Matthew</NameSpan> and I am a full stack
+						Hello, my name is <NameSpan>Matthew</NameSpan> and I am a full stack
 						JavaScript developer.
 					</HeroH1>
 					<HeroBtnWrapper>

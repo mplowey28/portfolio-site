@@ -8,7 +8,6 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
 	display: grid;
 	z-index: 1;
-	height: 600px;
 	width: 100%;
 	max-width: 1100px;
 	margin-right: auto;
@@ -30,14 +29,10 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-	margin-bottom: 15px;
-	padding: 0 15px;
 	grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-	margin-bottom: 15px;
-	padding: 0 15px;
 	grid-area: col2;
 `;
 
