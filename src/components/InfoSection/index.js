@@ -12,7 +12,7 @@ import {
 	Img,
 } from "./InfoElements";
 
-const InfoSection = ({ id, imgStart, headline, description, img, alt }) => {
+const InfoSection = ({ id, imgStart, headline, img, alt }) => {
 	return (
 		<>
 			<InfoContainer id={id}>
@@ -26,7 +26,17 @@ const InfoSection = ({ id, imgStart, headline, description, img, alt }) => {
 						</Column1>
 						<Column2>
 							<TextWrapper>
-								<SubTitle>{description}</SubTitle>
+								<SubTitle>
+									I am an experienced Full Stack JavaScript Developer with a
+									demonstrated history of working with React, React Native,
+									Node.js, Express, and Firebase. <br /> <br />
+									Before becoming a developer, I worked as researcher and
+									teacher who developed a strong interest in development through
+									hobby coding and through my work as a researcher. <br />{" "}
+									<br />I enjoy communicating technical concepts and developing
+									apps and services that are both user-friendly and visually
+									appealing.
+								</SubTitle>
 							</TextWrapper>
 						</Column2>
 					</InfoRow>

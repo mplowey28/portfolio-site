@@ -99,10 +99,15 @@ const Navbar = ({ toggle }) => {
 						<a
 							href='https://www.linkedin.com/in/matthew-plowey'
 							target='_blank'
+							rel='noopener noreferrer'
 						>
 							<LinkedIn src={linkedin} />
 						</a>
-						<a href='https://www.github.com/mplowey28' target='_blank'>
+						<a
+							href='https://www.github.com/mplowey28'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<GitHub src={github} />
 						</a>
 					</NavMenu>

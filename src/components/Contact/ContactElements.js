@@ -8,7 +8,7 @@ export const ContactContainer = styled.div`
 	background: #020104;
 
 	@media screen and (max-width: 768px) {
-		height: 600px;
+		height: 500px;
 	}
 
 	@media screen and (max-width: 480px) {

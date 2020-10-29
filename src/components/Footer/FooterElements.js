@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import FooterImg from "../../assests/images/footer.svg";
-import { Link as LinkR } from "react-router-dom";
 
 export const FooterContainer = styled.div`
 	background: #020104;

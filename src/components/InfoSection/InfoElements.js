@@ -8,12 +8,11 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
 	display: grid;
 	z-index: 1;
-	height: 500px;
+	height: 600px;
 	width: 100%;
 	max-width: 1100px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0 24px;
 	justify-content: center;
 `;
 
@@ -63,7 +62,6 @@ export const Heading = styled.h1`
 
 export const SubTitle = styled.p`
 	max-width: 440px;
-	margin-bottom: 35px;
 	font-size: 18px;
 	line-height: 24px;
 	color: #bebab4;
@@ -75,6 +73,7 @@ export const SubTitle = styled.p`
 
 export const ImgWrap = styled.div`
 	max-width: 300px;
+	margin: auto;
 	height: 100%;
 `;
 
