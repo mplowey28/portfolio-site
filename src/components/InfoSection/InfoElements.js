@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    padding-top: 80px;
+    padding-top: 40px;
     color: #bebab4;
     background: #020104;
 `
@@ -25,7 +25,7 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
 
     @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `
 
@@ -51,6 +51,10 @@ export const Heading = styled.h1`
     color: #f7f7f6;
     text-align: center;
 
+    @media screen and (max-width: 768px) {
+        padding-bottom: 20px;
+    }
+
     @media screen and (max-width: 480px) {
         font-size: 2rem;
     }
@@ -62,6 +66,10 @@ export const SubTitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: #bebab4; 
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 export const ImgWrap = styled.div`
@@ -71,7 +79,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     border-radius: 50%;
+    border: 2px solid #f7f7f6;
     width: 100%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
 `

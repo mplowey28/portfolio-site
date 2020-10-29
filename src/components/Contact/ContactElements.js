@@ -8,18 +8,22 @@ export const ContactContainer = styled.div`
     background: #020104;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 600px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 2000px;
+        height: 300px;
     }
 `
 
 export const ContactH1 = styled.h1`
-    margin-bottom: 64px;
     font-size: 2.5rem;
     color: #f7f7f6;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;

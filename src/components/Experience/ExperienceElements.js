@@ -9,11 +9,11 @@ export const ExperienceContainer = styled.div`
     background: #020104;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 500px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 2000px;
+        height: 700px;
     }
 `
 
@@ -23,7 +23,6 @@ export const ExperienceWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    grid-gap: 16px;
     padding: 0 50px;
 
     @media screen and (max-width: 1000px) {
@@ -64,7 +63,11 @@ export const ExperienceImg = styled.img`
 export const ExperienceH1 = styled.h1`
     font-size: 2.5rem;
     color: #f7f7f6;
-    margin-bottom: 64px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;

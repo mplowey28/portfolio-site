@@ -91,7 +91,7 @@ export const HeroContentWrapper = styled.div`
 export const HeroH1 = styled.h1`
     color: #bebab4;
     font-size: 36px;
-    padding: 40px;
+    padding: 20px;
 
     @media screen and (max-width: 768px) {
       font-size: 32px
@@ -115,7 +115,7 @@ export const NameSpan = styled.span`
 `
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
