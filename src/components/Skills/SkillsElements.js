@@ -55,12 +55,6 @@ export const SkillsCard = styled.div`
 	}
 `;
 
-export const SkillsImg = styled.img`
-	height: 160px;
-	width: 160px;
-	margin-bottom: 10px;
-`;
-
 export const SkillsH1 = styled.h1`
 	font-size: 2.5rem;
 	color: #f7f7f6;
@@ -77,10 +71,30 @@ export const SkillsH1 = styled.h1`
 
 export const SkillsH2 = styled.h2`
 	font-size: 1rem;
-	margin-bottom: 10px;
+	margin: 10px 0;
 `;
 
-export const SkillsP = styled.p`
-	font-size: 1rem;
+export const IconTextContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+`;
+export const LineContainer = styled.div`
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+`;
+
+export const IconContainer = styled.div`
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-right: 5px;
+`;
+
+export const TextContainer = styled.p`
+	display: flex;
+	align-content: center;
+	justify-content: center;
 	text-align: center;
 `;

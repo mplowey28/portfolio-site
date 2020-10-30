@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
+	height: 600px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -17,6 +18,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactH1 = styled.h1`
+	margin-top: 20px;
 	font-size: 2.5rem;
 	color: #f7f7f6;
 

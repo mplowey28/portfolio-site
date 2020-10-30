@@ -28,21 +28,57 @@ export const TimelineH1 = styled.h1`
 	}
 `;
 
-export const VideoContainer = styled.div`
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+export const LinkContainer = styled.div`
+	max-width: 80%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
 `;
 
-export const VideoBg = styled.video`
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	background: #020104;
+export const GithubContainer = styled.a`
+	font-size: 1em;
+	color: #020104;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0 0 5px #787878;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	height: 30px;
+	width: 150px;
+	cursor: pointer;
+
+	a:hover,
+	a:visited,
+	a:link,
+	a:active {
+		text-decoration: none;
+		color: #2e2e2e;
+	}
+`;
+export const LiveDemoContainer = styled.a`
+	font-size: 1em;
+	color: #020104;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0 0 5px #787878;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	height: 30px;
+	width: 150px;
+	cursor: pointer;
+
+	a:hover,
+	a:visited,
+	a:link,
+	a:active {
+		text-decoration: none;
+		color: #2e2e2e;
+	}
 `;

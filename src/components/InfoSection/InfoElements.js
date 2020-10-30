@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
 	color: #bebab4;
 	background: #020104;
+	overflow: hidden;
 `;
 
 export const InfoWrapper = styled.div`
+	height: 600px;
 	display: grid;
 	z-index: 1;
 	width: 100%;
@@ -41,6 +43,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
+	margin-bottom: -80px;
 	padding-top: 40px;
 	font-size: 2.5rem;
 	color: #f7f7f6;

@@ -15,9 +15,14 @@ const Experience = () => {
 			<ExperienceH1>Experience</ExperienceH1>
 			<ExperienceWrapper>
 				<ExperienceCard>
-					<ExperienceImg />
-					<ExperienceH2>Project 1</ExperienceH2>
-					<ExperienceP>Todo List made with TypeScript</ExperienceP>
+					<ExperienceH2>
+						Full Stack JavaScript - School of Applied Technology &lt;/salt&gt;
+					</ExperienceH2>
+					<ExperienceP>
+						Intensive three month training program for full stack web
+						development with a focus on TDD, mob programming, and applied
+						learning.
+					</ExperienceP>
 				</ExperienceCard>
 			</ExperienceWrapper>
 		</ExperienceContainer>

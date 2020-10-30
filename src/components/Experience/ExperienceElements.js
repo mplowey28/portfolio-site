@@ -77,6 +77,7 @@ export const ExperienceH1 = styled.h1`
 export const ExperienceH2 = styled.h2`
 	font-size: 1rem;
 	margin-bottom: 10px;
+	text-align: center;
 `;
 
 export const ExperienceP = styled.p`

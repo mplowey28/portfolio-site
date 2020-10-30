@@ -54,7 +54,7 @@ const Contact = () => {
 					name='message'
 					value={message}
 					onChange={handleChange}
-					placeholder='Message'
+					placeholder='  Message'
 				/>
 				<FormButton type='submit'>Send</FormButton>
 			</ContactForm>
