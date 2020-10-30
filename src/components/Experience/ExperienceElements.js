@@ -54,12 +54,6 @@ export const ExperienceCard = styled.div`
 	}
 `;
 
-export const ExperienceImg = styled.img`
-	height: 160px;
-	width: 160px;
-	margin-bottom: 10px;
-`;
-
 export const ExperienceH1 = styled.h1`
 	font-size: 2.5rem;
 	color: #f7f7f6;
