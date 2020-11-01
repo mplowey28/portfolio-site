@@ -27,6 +27,7 @@ const Contact = () => {
 			.catch(error => alert(error));
 
 		e.preventDefault();
+		setState({ name: "", email: "", message: "" });
 	};
 
 	const handleChange = e => setState({ [e.target.name]: e.target.value });
@@ -42,6 +43,7 @@ const Contact = () => {
 					value={name}
 					onChange={handleChange}
 					placeholder='Your name'
+					required
 				/>
 				<ContactInput
 					type='email'
@@ -49,12 +51,14 @@ const Contact = () => {
 					value={email}
 					onChange={handleChange}
 					placeholder='Your email'
+					required
 				/>
 				<ContactTextArea
 					name='message'
 					value={message}
 					onChange={handleChange}
 					placeholder='  Message'
+					required
 				/>
 				<FormButton type='submit'>Send</FormButton>
 			</ContactForm>

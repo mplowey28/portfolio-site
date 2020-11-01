@@ -55,7 +55,7 @@ const Timeline = () => {
 
 					<LinkContainer>
 						<GithubContainer
-							href='https://github.com/mplowey28/portfolio-site'
+							href='https://github.com/mplowey28/a-birds-eye-view'
 							target='_blank'
 							rel='noopener noreferrer'
 						>

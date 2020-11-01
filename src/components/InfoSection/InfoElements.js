@@ -59,6 +59,7 @@ export const Heading = styled.h1`
 
 	@media screen and (max-width: 480px) {
 		font-size: 2rem;
+		margin-top: 40px;
 	}
 `;
 
