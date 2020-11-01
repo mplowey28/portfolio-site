@@ -8,6 +8,7 @@ import {
 	ExperienceH2,
 	ExperienceP,
 } from "./ExperienceElements";
+import Salt from "../../assests/images/salt.jpg";
 
 const Experience = () => {
 	return (
@@ -15,6 +16,7 @@ const Experience = () => {
 			<ExperienceH1>Experience</ExperienceH1>
 			<ExperienceWrapper>
 				<ExperienceCard>
+					<ExperienceImg src={Salt} alt='salt logo' />
 					<ExperienceH2>
 						Full Stack JavaScript - School of Applied Technology &lt;/salt&gt;
 					</ExperienceH2>

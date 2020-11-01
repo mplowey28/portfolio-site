@@ -78,3 +78,12 @@ export const ExperienceP = styled.p`
 	font-size: 1rem;
 	text-align: center;
 `;
+
+export const ExperienceImg = styled.img`
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	background: #020104;
+	margin-bottom: 20px;
+`;

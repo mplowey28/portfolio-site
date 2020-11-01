@@ -60,7 +60,7 @@ export const LinkContainer = styled.div`
 	margin-top: 20px;
 `;
 
-export const GithubContainer = styled.div`
+export const GithubContainer = styled.a`
 	font-size: 1em;
 	color: #020104;
 	text-decoration: none;
@@ -68,7 +68,7 @@ export const GithubContainer = styled.div`
 	box-shadow: 0 0 5px #787878;
 	padding: 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	margin-right: 20px;
 	height: 30px;
@@ -82,9 +82,13 @@ export const GithubContainer = styled.div`
 		text-decoration: none;
 		color: #2e2e2e;
 	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 0.75rem;
+	}
 `;
 
-export const LiveDemoContainer = styled.div`
+export const LiveDemoContainer = styled.a`
 	font-size: 1em;
 	color: #020104;
 	text-decoration: none;
@@ -92,7 +96,7 @@ export const LiveDemoContainer = styled.div`
 	box-shadow: 0 0 5px #787878;
 	padding: 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	margin-right: 20px;
 	height: 30px;
@@ -105,5 +109,9 @@ export const LiveDemoContainer = styled.div`
 	a:active {
 		text-decoration: none;
 		color: #2e2e2e;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 0.75rem;
 	}
 `;

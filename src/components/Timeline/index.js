@@ -54,15 +54,13 @@ const Timeline = () => {
 					</h4>
 
 					<LinkContainer>
-						<GithubContainer>
-							<a
-								href='https://github.com/mplowey28/portfolio-site'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaGithub />
-								Code
-							</a>
+						<GithubContainer
+							href='https://github.com/mplowey28/portfolio-site'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
 						</GithubContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
@@ -92,25 +90,21 @@ const Timeline = () => {
 						Tech used: <span>React Native, Expo, Firebase</span>
 					</h4>
 					<LinkContainer>
-						<GithubContainer>
-							<a
-								href='https://github.com/mplowey28/TrashTagger'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaGithub />
-								Code
-							</a>
+						<GithubContainer
+							href='https://github.com/mplowey28/TrashTagger'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
 						</GithubContainer>
-						<LiveDemoContainer>
-							<a
-								href='https://vimeo.com/472432541'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaPlay />
-								Video Demo
-							</a>
+						<LiveDemoContainer
+							href='https://vimeo.com/472432541'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaPlay />
+							See Demo
 						</LiveDemoContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
@@ -139,15 +133,13 @@ const Timeline = () => {
 						<span>React Native, Expo, Redux, React Navigator, Firebase</span>
 					</h4>
 					<LinkContainer>
-						<GithubContainer>
-							<a
-								href='https://github.com/mplowey28/TappyPublic'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaGithub />
-								Code
-							</a>
+						<GithubContainer
+							href='https://github.com/mplowey28/TappyPublic'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
 						</GithubContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
@@ -170,25 +162,21 @@ const Timeline = () => {
 						<span> TypeScript, React, Redux, Bulma</span>
 					</h4>
 					<LinkContainer>
-						<GithubContainer>
-							<a
-								href='https://github.com/mplowey28/weather-app-typescript-react-'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaGithub />
-								Code
-							</a>
+						<GithubContainer
+							href='https://github.com/mplowey28/weather-app-typescript-react-'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
 						</GithubContainer>
-						<LiveDemoContainer>
-							<a
-								href='https://github.com/mplowey28/SatelliteImages'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaPlay />
-								See live
-							</a>
+						<LiveDemoContainer
+							href='https://github.com/mplowey28/weather-app-typescript-react-'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaPlay />
+							See live
 						</LiveDemoContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
@@ -213,15 +201,13 @@ const Timeline = () => {
 						Tech used: <span>React, Styled Components, Netlify</span>
 					</h4>
 					<LinkContainer>
-						<GithubContainer>
-							<a
-								href='https://github.com/mplowey28/portfolio-site'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaGithub />
-								Code
-							</a>
+						<GithubContainer
+							href='https://github.com/mplowey28/portfolio-site'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
 						</GithubContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
