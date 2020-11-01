@@ -15,6 +15,10 @@ export const InfoWrapper = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 	justify-content: center;
+
+	@media screen and (max-width: 768px) {
+		height: 800px;
+	}
 `;
 
 export const InfoRow = styled.div`
@@ -50,7 +54,7 @@ export const Heading = styled.h1`
 	text-align: center;
 
 	@media screen and (max-width: 768px) {
-		padding-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -66,6 +70,7 @@ export const SubTitle = styled.p`
 
 	@media screen and (max-width: 768px) {
 		text-align: center;
+		padding: 0 10px;
 	}
 `;
 

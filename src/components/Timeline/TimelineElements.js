@@ -28,6 +28,30 @@ export const TimelineH1 = styled.h1`
 	}
 `;
 
+export const VideoBg = styled.video`
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	background: #020104;
+`;
+
+export const Gif = styled.img`
+	width: 25%;
+	height: 25%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	background: #020104;
+`;
+
+export const Pic = styled.img`
+	width: 50%;
+	height: 50%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	background: #020104;
+`;
+
 export const LinkContainer = styled.div`
 	max-width: 80%;
 	display: flex;
@@ -36,7 +60,7 @@ export const LinkContainer = styled.div`
 	margin-top: 20px;
 `;
 
-export const GithubContainer = styled.a`
+export const GithubContainer = styled.div`
 	font-size: 1em;
 	color: #020104;
 	text-decoration: none;
@@ -59,7 +83,8 @@ export const GithubContainer = styled.a`
 		color: #2e2e2e;
 	}
 `;
-export const LiveDemoContainer = styled.a`
+
+export const LiveDemoContainer = styled.div`
 	font-size: 1em;
 	color: #020104;
 	text-decoration: none;

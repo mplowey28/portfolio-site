@@ -12,7 +12,15 @@ import {
 	LinkContainer,
 	GithubContainer,
 	LiveDemoContainer,
+	VideoBg,
+	Gif,
+	Pic,
 } from "./TimelineElements";
+import BEV from "../../videos/bev.mp4";
+import Weather from "../../videos/weather.mp4";
+import Tappy from "../../videos/tappy_gif.gif";
+import TrashTag from "../../assests/images/trashtagger_logo.png";
+import Portfolio from "../../assests/images/portfolio.png";
 
 const Timeline = () => {
 	return (
@@ -31,11 +39,14 @@ const Timeline = () => {
 					<h3 className='vertical-timeline-element-title'>A bird's eye view</h3>
 					<h4 className='vertical-timeline-element-subtitle'>July 2020</h4>
 					<br />
+					<VideoBg autoPlay loop muted src={BEV} type='video/mp4' />
+					<br />
+					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>
 						A React web app I made during a hackday. Users can input a city or
 						major site in the world and the app will return the latest Landsat
-						satellite image of the user's input location.{" "}
+						satellite image of the user's input location.
 					</p>
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>
@@ -45,7 +56,7 @@ const Timeline = () => {
 					<LinkContainer>
 						<GithubContainer>
 							<a
-								href='https://github.com/mplowey28/SatelliteImages'
+								href='https://github.com/mplowey28/portfolio-site'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -62,6 +73,9 @@ const Timeline = () => {
 				>
 					<h3 className='vertical-timeline-element-title'>TrashTagger</h3>
 					<h4 className='vertical-timeline-element-subtitle'>July 2020</h4>
+					<br />
+					<Pic src={TrashTag} alt='TrashTagger logo' />
+					<br />
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>
@@ -90,7 +104,7 @@ const Timeline = () => {
 						</GithubContainer>
 						<LiveDemoContainer>
 							<a
-								href='https://github.com/mplowey28/SatelliteImages'
+								href='https://vimeo.com/472432541'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -107,6 +121,9 @@ const Timeline = () => {
 				>
 					<h3 className='vertical-timeline-element-title'>Tappy</h3>
 					<h4 className='vertical-timeline-element-subtitle'>Sept 2020</h4>
+					<br />
+					<Gif src={Tappy} alt='Tappy gif' />
+					<br />
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>
@@ -132,16 +149,6 @@ const Timeline = () => {
 								Code
 							</a>
 						</GithubContainer>
-						<LiveDemoContainer>
-							<a
-								href='https://github.com/mplowey28/SatelliteImages'
-								target='_blank'
-								rel='noopener noreferrer'
-							>
-								<FaPlay />
-								Video Demo
-							</a>
-						</LiveDemoContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
@@ -151,7 +158,9 @@ const Timeline = () => {
 				>
 					<h3 className='vertical-timeline-element-title'>Weather App</h3>
 					<h4 className='vertical-timeline-element-subtitle'>Oct 2020</h4>
-
+					<br />
+					<VideoBg autoPlay loop muted src={Weather} type='video/mp4' />
+					<br />
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>A React app built with TypeScript using OpenWeatherMap API.</p>
@@ -190,6 +199,9 @@ const Timeline = () => {
 				>
 					<h3 className='vertical-timeline-element-title'>Portfolio Site</h3>
 					<h4 className='vertical-timeline-element-subtitle'>Oct 2020</h4>
+					<br />
+					<Pic src={Portfolio} alt='portfolio page hero image' />
+					<br />
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>
