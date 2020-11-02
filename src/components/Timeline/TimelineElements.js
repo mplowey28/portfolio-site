@@ -72,7 +72,7 @@ export const GithubContainer = styled.a`
 	align-items: center;
 	margin-right: 20px;
 	height: 30px;
-	width: 150px;
+	width: 100px;
 	cursor: pointer;
 
 	a:hover,
@@ -100,7 +100,7 @@ export const LiveDemoContainer = styled.a`
 	align-items: center;
 	margin-right: 20px;
 	height: 30px;
-	width: 150px;
+	width: 100px;
 	cursor: pointer;
 
 	a:hover,

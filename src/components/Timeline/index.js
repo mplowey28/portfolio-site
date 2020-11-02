@@ -171,7 +171,7 @@ const Timeline = () => {
 							Code
 						</GithubContainer>
 						<LiveDemoContainer
-							href='https://github.com/mplowey28/weather-app-typescript-react-'
+							href='https://flamboyant-blackwell-f8f8c1.netlify.app'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
