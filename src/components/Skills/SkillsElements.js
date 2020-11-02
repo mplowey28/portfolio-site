@@ -77,6 +77,7 @@ export const SkillsH2 = styled.h2`
 
 export const IconTextContainer = styled.div`
 	display: flex;
+	width: 100%;
 	flex-direction: column;
 	align-content: center;
 `;
