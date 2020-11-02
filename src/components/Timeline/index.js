@@ -104,7 +104,7 @@ const Timeline = () => {
 							rel='noopener noreferrer'
 						>
 							<FaPlay />
-							See Demo
+							Demo
 						</LiveDemoContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
@@ -176,7 +176,7 @@ const Timeline = () => {
 							rel='noopener noreferrer'
 						>
 							<FaPlay />
-							See live
+							Demo
 						</LiveDemoContainer>
 					</LinkContainer>
 				</VerticalTimelineElement>
