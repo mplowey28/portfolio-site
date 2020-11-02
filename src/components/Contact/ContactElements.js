@@ -57,7 +57,7 @@ export const ContactInput = styled.input`
 export const ContactTextArea = styled.textarea`
 	border-radius: 4px;
 	border: none;
-	padding: 4px;
+	padding: 16px 16px;
 	line-height: 16px;
 	font-size: 14px;
 	line-height: 16px;

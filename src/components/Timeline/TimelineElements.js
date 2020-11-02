@@ -61,6 +61,7 @@ export const LinkContainer = styled.div`
 `;
 
 export const GithubContainer = styled.a`
+	background-color: #d7d8da;
 	font-size: 1em;
 	color: #020104;
 	text-decoration: none;
@@ -74,6 +75,12 @@ export const GithubContainer = styled.a`
 	height: 30px;
 	width: 100px;
 	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		background: #f3f3f3;
+	}
 
 	a:hover,
 	a:visited,
@@ -89,6 +96,7 @@ export const GithubContainer = styled.a`
 `;
 
 export const LiveDemoContainer = styled.a`
+	background-color: #d7d8da;
 	font-size: 1em;
 	color: #020104;
 	text-decoration: none;
@@ -102,6 +110,12 @@ export const LiveDemoContainer = styled.a`
 	height: 30px;
 	width: 100px;
 	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		background: #f3f3f3;
+	}
 
 	a:hover,
 	a:visited,
