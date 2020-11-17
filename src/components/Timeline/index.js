@@ -31,31 +31,99 @@ const Timeline = () => {
 			<VerticalTimeline>
 				<VerticalTimelineElement
 					className='vertical-timeline-element--work'
-					contentStyle={{ background: "#f7f7f6", color: "#020104" }}
-					contentArrowStyle={{ borderRight: "7px solid  #f7f7f6" }}
-					iconStyle={{ background: "#020104", color: "#f7f7f6" }}
+					iconStyle={{ background: "#020104", color: "#fff" }}
 					icon={<FaReact />}
 				>
-					<h3 className='vertical-timeline-element-title'>A bird's eye view</h3>
-					<h4 className='vertical-timeline-element-subtitle'>July 2020</h4>
+					<h3 className='vertical-timeline-element-title'>Portfolio Site</h3>
+					<h4 className='vertical-timeline-element-subtitle'>Oct 2020</h4>
 					<br />
-					<VideoBg autoPlay loop muted src={BEV} type='video/mp4' />
+					<Pic src={Portfolio} alt='portfolio page hero image' />
 					<br />
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>
-						A React web app I made during a hackday. Users can input a city or
-						major site in the world and the app will return the latest Landsat
-						satellite image of the user's input location.
+						My personal portfolio site. A responsive site made with React and
+						Styled Components. Hosted on Netlify.
 					</p>
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>
-						Tech used: <span>React, Node.js</span>
+						Tech used: <span>React, Styled Components, Netlify</span>
 					</h4>
-
 					<LinkContainer>
 						<GithubContainer
-							href='https://github.com/mplowey28/a-birds-eye-view'
+							href='https://github.com/mplowey28/portfolio-site'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
+						</GithubContainer>
+					</LinkContainer>
+				</VerticalTimelineElement>
+				<VerticalTimelineElement
+					className='vertical-timeline-element--work'
+					iconStyle={{ background: "#020104", color: "#fff" }}
+					icon={<FaReact />}
+				>
+					<h3 className='vertical-timeline-element-title'>Weather App</h3>
+					<h4 className='vertical-timeline-element-subtitle'>Oct 2020</h4>
+					<br />
+					<VideoBg autoPlay loop muted src={Weather} type='video/mp4' />
+					<br />
+					<br />
+					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
+					<p>A React app built with TypeScript using OpenWeatherMap API.</p>
+					<br />
+					<h4 className='vertical-timeline-element-subtitle'>
+						Tech used:
+						<span> TypeScript, React, Redux, Bulma</span>
+					</h4>
+					<LinkContainer>
+						<GithubContainer
+							href='https://github.com/mplowey28/weather-app-typescript-react-'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub />
+							Code
+						</GithubContainer>
+						<LiveDemoContainer
+							href='https://flamboyant-blackwell-f8f8c1.netlify.app'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaPlay />
+							Demo
+						</LiveDemoContainer>
+					</LinkContainer>
+				</VerticalTimelineElement>
+				<VerticalTimelineElement
+					className='vertical-timeline-element--work'
+					iconStyle={{ background: "#020104", color: "#fff" }}
+					icon={<FaReact />}
+				>
+					<h3 className='vertical-timeline-element-title'>Tappy</h3>
+					<h4 className='vertical-timeline-element-subtitle'>Sept 2020</h4>
+					<br />
+					<Gif src={Tappy} alt='Tappy gif' />
+					<br />
+					<br />
+					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
+					<p>
+						A React Native app with Firebase user authenication developed for
+						Tappy during a two week sprint. The app allows user to send vouchers
+						for drinks, coffee, and pastries for local resturants to their
+						friends. Features a shopping cart feature built using Redux and
+						payments handled by Stripe.
+					</p>
+					<br />
+					<h4 className='vertical-timeline-element-subtitle'>
+						Tech used:{" "}
+						<span>React Native, Expo, Redux, React Navigator, Firebase</span>
+					</h4>
+					<LinkContainer>
+						<GithubContainer
+							href='https://github.com/mplowey28/TappyPublic'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
@@ -110,99 +178,31 @@ const Timeline = () => {
 				</VerticalTimelineElement>
 				<VerticalTimelineElement
 					className='vertical-timeline-element--work'
-					iconStyle={{ background: "#020104", color: "#fff" }}
+					contentStyle={{ background: "#f7f7f6", color: "#020104" }}
+					contentArrowStyle={{ borderRight: "7px solid  #f7f7f6" }}
+					iconStyle={{ background: "#020104", color: "#f7f7f6" }}
 					icon={<FaReact />}
 				>
-					<h3 className='vertical-timeline-element-title'>Tappy</h3>
-					<h4 className='vertical-timeline-element-subtitle'>Sept 2020</h4>
+					<h3 className='vertical-timeline-element-title'>A bird's eye view</h3>
+					<h4 className='vertical-timeline-element-subtitle'>July 2020</h4>
 					<br />
-					<Gif src={Tappy} alt='Tappy gif' />
+					<VideoBg autoPlay loop muted src={BEV} type='video/mp4' />
 					<br />
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
 					<p>
-						A React Native app with Firebase user authenication developed for
-						Tappy during a two week sprint. The app allows user to send vouchers
-						for drinks, coffee, and pastries for local resturants to their
-						friends. Features a shopping cart feature built using Redux and
-						payments handled by Stripe.
+						A React web app I made during a hackday. Users can input a city or
+						major site in the world and the app will return the latest Landsat
+						satellite image of the user's input location.
 					</p>
 					<br />
 					<h4 className='vertical-timeline-element-subtitle'>
-						Tech used:{" "}
-						<span>React Native, Expo, Redux, React Navigator, Firebase</span>
+						Tech used: <span>React, Node.js</span>
 					</h4>
+
 					<LinkContainer>
 						<GithubContainer
-							href='https://github.com/mplowey28/TappyPublic'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<FaGithub />
-							Code
-						</GithubContainer>
-					</LinkContainer>
-				</VerticalTimelineElement>
-				<VerticalTimelineElement
-					className='vertical-timeline-element--work'
-					iconStyle={{ background: "#020104", color: "#fff" }}
-					icon={<FaReact />}
-				>
-					<h3 className='vertical-timeline-element-title'>Weather App</h3>
-					<h4 className='vertical-timeline-element-subtitle'>Oct 2020</h4>
-					<br />
-					<VideoBg autoPlay loop muted src={Weather} type='video/mp4' />
-					<br />
-					<br />
-					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
-					<p>A React app built with TypeScript using OpenWeatherMap API.</p>
-					<br />
-					<h4 className='vertical-timeline-element-subtitle'>
-						Tech used:
-						<span> TypeScript, React, Redux, Bulma</span>
-					</h4>
-					<LinkContainer>
-						<GithubContainer
-							href='https://github.com/mplowey28/weather-app-typescript-react-'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<FaGithub />
-							Code
-						</GithubContainer>
-						<LiveDemoContainer
-							href='https://flamboyant-blackwell-f8f8c1.netlify.app'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<FaPlay />
-							Demo
-						</LiveDemoContainer>
-					</LinkContainer>
-				</VerticalTimelineElement>
-				<VerticalTimelineElement
-					className='vertical-timeline-element--work'
-					iconStyle={{ background: "#020104", color: "#fff" }}
-					icon={<FaReact />}
-				>
-					<h3 className='vertical-timeline-element-title'>Portfolio Site</h3>
-					<h4 className='vertical-timeline-element-subtitle'>Oct 2020</h4>
-					<br />
-					<Pic src={Portfolio} alt='portfolio page hero image' />
-					<br />
-					<br />
-					<h4 className='vertical-timeline-element-subtitle'>Description:</h4>
-					<p>
-						My personal portfolio site. A responsive site made with React and
-						Styled Components. Hosted on Netlify.
-					</p>
-					<br />
-					<h4 className='vertical-timeline-element-subtitle'>
-						Tech used: <span>React, Styled Components, Netlify</span>
-					</h4>
-					<LinkContainer>
-						<GithubContainer
-							href='https://github.com/mplowey28/portfolio-site'
+							href='https://github.com/mplowey28/a-birds-eye-view'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
