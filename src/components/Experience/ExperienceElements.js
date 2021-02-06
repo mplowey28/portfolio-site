@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ExperienceContainer = styled.div`
-  height: 600px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@ export const ExperienceCard = styled.div`
   align-items: center;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
