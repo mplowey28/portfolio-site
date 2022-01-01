@@ -1,4 +1,5 @@
-import React from "react";
+import photo from "../../assests/images/me.jpg";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -12,7 +13,7 @@ import {
   Img,
 } from "./InfoElements";
 
-const InfoSection = ({ id, imgStart, headline, img, alt }) => {
+const InfoSection = ({ id, imgStart, headline, alt }) => {
   return (
     <>
       <InfoContainer id={id}>
@@ -21,7 +22,7 @@ const InfoSection = ({ id, imgStart, headline, img, alt }) => {
           <InfoRow imgStart={imgStart}>
             <Column1>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={photo} alt={alt} />
               </ImgWrap>
             </Column1>
             <Column2>
