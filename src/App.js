@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
   html {
     --color-text: #18A2D9;
     --color-background: black;
-    --color-highlight: #00dfff;
+    --color-highlight: #FFF;
   }
 `;
 
