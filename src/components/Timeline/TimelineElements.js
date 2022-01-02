@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const TimelineContainer = styled.div`
-  background: #020104;
+  background: var(--color-background);
 `;
 
 export const TimelineHeader = styled.div`
-  background: #020104;
+  background: var(--color-background);
   height: 200px;
   color: #f7f7f6;
   display: flex;

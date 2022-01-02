@@ -2,7 +2,7 @@ import styled from "styled-components";
 import FooterImg from "../../assests/images/footer.svg";
 
 export const FooterContainer = styled.div`
-  background: #020104;
+  background: var(--color-background);
 `;
 export const FooterWrapper = styled.div`
   position: relative;

@@ -6,14 +6,10 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #020104;
+  background: var(--color-background);
 
   @media screen and (max-width: 768px) {
-    height: 900px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1000px;
+    height: 1400px;
   }
 `;
 

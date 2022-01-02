@@ -6,13 +6,9 @@ export const ExperienceContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #020104;
+  background: var(--color-background);
 
   @media screen and (max-width: 768px) {
-    height: 500px;
-  }
-
-  @media screen and (max-width: 480px) {
     height: 700px;
   }
 `;
