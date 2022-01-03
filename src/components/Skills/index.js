@@ -4,31 +4,11 @@ import {
   SkillsWrapper,
   SkillsCard,
   SkillsH2,
+  Img,
   IconTextContainer,
   LineContainer,
-  IconContainer,
   TextContainer,
 } from "./SkillsElements";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiReact,
-  SiRedux,
-  SiReactrouter,
-  SiSass,
-  SiStyledComponents,
-  SiNodeDotJs,
-  SiFirebase,
-  SiMongodb,
-  SiPostgresql,
-  SiGit,
-  SiVisualstudiocode,
-  SiMocha,
-  SiJest,
-  SiMaterialUi,
-} from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -39,67 +19,43 @@ const Skills = () => {
           <SkillsH2>Programming Languages</SkillsH2>
           <IconTextContainer>
             <LineContainer>
-              <IconContainer>
-                <SiJavascript />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/javascript.png" />
               <TextContainer>JavaScript</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiTypescript />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/typescript.png" />
               <TextContainer>TypeScript</TextContainer>
             </LineContainer>
           </IconTextContainer>
           <SkillsH2>Frontend</SkillsH2>
           <IconTextContainer>
             <LineContainer>
-              <IconContainer>
-                <SiHtml5 />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/html-5.png" />
               <TextContainer>HTML5</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiCss3 />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/css3.png" />
               <TextContainer>CSS3</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiReact />
-              </IconContainer>
+              <Img src="https://img.icons8.com/plasticine/react.png" />
               <TextContainer>React/React Native</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiRedux />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/redux.png" />
               <TextContainer>Redux</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiReactrouter />
-              </IconContainer>
-              <TextContainer>React Router</TextContainer>
-            </LineContainer>
-            <LineContainer>
-              <IconContainer>
-                <SiSass />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/344/sass-avatar.png" />
               <TextContainer>SASS</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiStyledComponents />
-              </IconContainer>
-              <TextContainer>Styled Components</TextContainer>
+              <Img src="https://img.icons8.com/color/material-ui.png" />
+              <TextContainer>Material-UI</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiMaterialUi />
-              </IconContainer>
-              <TextContainer>Material-UI</TextContainer>
+              <Img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" />
+              <TextContainer>Tailwind css</TextContainer>
             </LineContainer>
           </IconTextContainer>
         </SkillsCard>
@@ -107,30 +63,22 @@ const Skills = () => {
           <SkillsH2>Backend</SkillsH2>
           <IconTextContainer>
             <LineContainer>
-              <IconContainer>
-                <SiNodeDotJs />
-              </IconContainer>
+              <Img src="https://img.icons8.com/fluent/node-js.png" />
               <TextContainer>Node.js/Express</TextContainer>
             </LineContainer>
           </IconTextContainer>
           <SkillsH2>Databases</SkillsH2>
           <IconTextContainer>
             <LineContainer>
-              <IconContainer>
-                <SiFirebase />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/firebase.png" />
               <TextContainer>FireBase</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiMongodb />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/mongodb.png" />
               <TextContainer>MongoDB</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiPostgresql />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/postgreesql.png" />
               <TextContainer>PostgreSQL</TextContainer>
             </LineContainer>
           </IconTextContainer>
@@ -139,31 +87,30 @@ const Skills = () => {
           <SkillsH2>Version Control</SkillsH2>
           <IconTextContainer>
             <LineContainer>
-              <IconContainer>
-                <SiGit />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/git.png" />
               <TextContainer>Git</TextContainer>
+            </LineContainer>
+            <LineContainer>
+              <Img src="https://img.icons8.com/material-sharp/github.png" />
+              <TextContainer>Github</TextContainer>
+            </LineContainer>
+            <LineContainer>
+              <Img src="https://img.icons8.com/color/gitlab.png" />
+              <TextContainer>Gitlab</TextContainer>
             </LineContainer>
           </IconTextContainer>
           <SkillsH2>Tools and Technologies</SkillsH2>
           <IconTextContainer>
             <LineContainer>
-              <IconContainer>
-                <SiVisualstudiocode />
-              </IconContainer>
+              <Img src="https://img.icons8.com/color/visual-studio-code-2019.png" />
               <TextContainer>VS Code</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiMocha />
-              </IconContainer>
-              <TextContainer>Mocha</TextContainer>
+              <Img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-shadow-tal-revivo.png" />
+              <TextContainer>Jest</TextContainer>
             </LineContainer>
             <LineContainer>
-              <IconContainer>
-                <SiJest />
-              </IconContainer>
-              <TextContainer>Jest</TextContainer>
+              <TextContainer>React Testing Library</TextContainer>
             </LineContainer>
             <LineContainer>
               <TextContainer>TDD</TextContainer>

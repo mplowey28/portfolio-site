@@ -8,8 +8,8 @@ export const SkillsContainer = styled.div`
   align-items: center;
   background: var(--color-background);
 
-  @media screen and (max-width: 768px) {
-    height: 1400px;
+  @media screen and (max-width: 1000px) {
+    height: 2000px;
   }
 `;
 
@@ -33,15 +33,17 @@ export const SkillsWrapper = styled.div`
 `;
 
 export const SkillsCard = styled.div`
-  background: #f7f7f6;
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 10px;
-  max-height: 340px;
+  height: 550px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -67,8 +69,10 @@ export const SkillsH1 = styled.h1`
 `;
 
 export const SkillsH2 = styled.h2`
-  font-size: 1rem;
+  color: #fff;
+  font-size: 1.25rem;
   margin: 10px 0;
+  text-decoration: underline;
 `;
 
 export const IconTextContainer = styled.div`
@@ -76,23 +80,24 @@ export const IconTextContainer = styled.div`
   width: 100%;
   flex-direction: column;
   align-content: center;
+  padding: 10px;
 `;
 export const LineContainer = styled.div`
   display: flex;
-  align-content: center;
+  direction: row;
+  align-items: center;
   justify-content: flex-start;
 `;
 
-export const IconContainer = styled.div`
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  margin-right: 5px;
-`;
-
 export const TextContainer = styled.p`
+  color: #fff;
   display: flex;
   align-content: center;
   justify-content: center;
   text-align: center;
+  padding-left: 10px;
+`;
+export const Img = styled.img`
+  height: 40px;
+  width: 40px;
 `;
