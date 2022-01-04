@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const ExperienceContainer = styled.div`
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--color-background);
-
-  @media screen and (max-width: 768px) {
-    height: 700px;
-  }
+  padding: 80px 0;
 `;
 
 export const ExperienceWrapper = styled.div`

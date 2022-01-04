@@ -1,20 +1,13 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  height: 600px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--color-background);
-
-  @media screen and (max-width: 768px) {
-    height: 500px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 500px;
-  }
+  padding: 50px 0;
 `;
 
 export const ContactH1 = styled.h1`

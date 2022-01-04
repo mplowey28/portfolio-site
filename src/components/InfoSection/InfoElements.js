@@ -7,7 +7,7 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-  height: 600px;
+  height: auto;
   display: grid;
   z-index: 1;
   width: 100%;
@@ -15,10 +15,7 @@ export const InfoWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    height: 800px;
-  }
+  padding: 80px 0;
 `;
 
 export const InfoRow = styled.div`
@@ -47,7 +44,6 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: -80px;
   padding-top: 40px;
   font-size: 2.5rem;
   color: #f7f7f6;

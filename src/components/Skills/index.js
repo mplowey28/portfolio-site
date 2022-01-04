@@ -1,13 +1,18 @@
 import {
+  Backend,
+  Databases,
+  Frontend,
   SkillsContainer,
   SkillsH1,
   SkillsWrapper,
-  SkillsCard,
+  Language,
   SkillsH2,
   Img,
   IconTextContainer,
   LineContainer,
   TextContainer,
+  Version,
+  Tools,
 } from "./SkillsElements";
 
 const Skills = () => {
@@ -15,7 +20,7 @@ const Skills = () => {
     <SkillsContainer id="skills">
       <SkillsH1>Skills</SkillsH1>
       <SkillsWrapper>
-        <SkillsCard>
+        <Language>
           <SkillsH2>Programming Languages</SkillsH2>
           <IconTextContainer>
             <LineContainer>
@@ -27,6 +32,8 @@ const Skills = () => {
               <TextContainer>TypeScript</TextContainer>
             </LineContainer>
           </IconTextContainer>
+        </Language>
+        <Frontend>
           <SkillsH2>Frontend</SkillsH2>
           <IconTextContainer>
             <LineContainer>
@@ -58,8 +65,8 @@ const Skills = () => {
               <TextContainer>Tailwind css</TextContainer>
             </LineContainer>
           </IconTextContainer>
-        </SkillsCard>
-        <SkillsCard>
+        </Frontend>
+        <Backend>
           <SkillsH2>Backend</SkillsH2>
           <IconTextContainer>
             <LineContainer>
@@ -67,6 +74,8 @@ const Skills = () => {
               <TextContainer>Node.js/Express</TextContainer>
             </LineContainer>
           </IconTextContainer>
+        </Backend>
+        <Databases>
           <SkillsH2>Databases</SkillsH2>
           <IconTextContainer>
             <LineContainer>
@@ -82,8 +91,8 @@ const Skills = () => {
               <TextContainer>PostgreSQL</TextContainer>
             </LineContainer>
           </IconTextContainer>
-        </SkillsCard>
-        <SkillsCard>
+        </Databases>
+        <Version>
           <SkillsH2>Version Control</SkillsH2>
           <IconTextContainer>
             <LineContainer>
@@ -99,6 +108,8 @@ const Skills = () => {
               <TextContainer>Gitlab</TextContainer>
             </LineContainer>
           </IconTextContainer>
+        </Version>
+        <Tools>
           <SkillsH2>Tools and Technologies</SkillsH2>
           <IconTextContainer>
             <LineContainer>
@@ -106,10 +117,23 @@ const Skills = () => {
               <TextContainer>VS Code</TextContainer>
             </LineContainer>
             <LineContainer>
+              <Img src="https://img.icons8.com/color/npm.png" />
+              <TextContainer>NPM</TextContainer>
+            </LineContainer>
+            <LineContainer>
+              <Img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/external-yarn-fast-reliable-and-secure-dependency-management-web-portal-logo-color-tal-revivo.png" />
+              <TextContainer>Yarn</TextContainer>
+            </LineContainer>
+            <LineContainer>
+              <Img src="https://img.icons8.com/color/docker.png" />
+              <TextContainer>Docker</TextContainer>
+            </LineContainer>
+            <LineContainer>
               <Img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-shadow-tal-revivo.png" />
               <TextContainer>Jest</TextContainer>
             </LineContainer>
             <LineContainer>
+              <Img src="https://testing-library.com/img/octopus-64x64.png" />
               <TextContainer>React Testing Library</TextContainer>
             </LineContainer>
             <LineContainer>
@@ -119,7 +143,7 @@ const Skills = () => {
               <TextContainer>Agile work methods</TextContainer>
             </LineContainer>
           </IconTextContainer>
-        </SkillsCard>
+        </Tools>
       </SkillsWrapper>
     </SkillsContainer>
   );

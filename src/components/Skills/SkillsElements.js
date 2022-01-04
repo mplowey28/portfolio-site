@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--color-background);
-
-  @media screen and (max-width: 1000px) {
-    height: 2000px;
-  }
+  padding: 50px 0;
 `;
 
 export const SkillsWrapper = styled.div`
@@ -18,31 +15,146 @@ export const SkillsWrapper = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "language backend version"
+    "frontend databases tools"
+    "frontend databases  tools";
+  align-items: stretch;
   grid-gap: 16px;
   padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "language  databases"
+      "frontend  version"
+      "backend   tools";
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "language"
+      "frontend"
+      "backend"
+      "databases"
+      "version"
+      "tools";
     padding: 0 20px;
   }
 `;
 
-export const SkillsCard = styled.div`
+export const Language = styled.div`
   background: rgba(24, 162, 217, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   border-radius: 10px;
+  grid-area: language;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+`;
+export const Frontend = styled.div`
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  grid-area: frontend;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 550px;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+`;
+export const Backend = styled.div`
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  grid-area: backend;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+`;
+export const Databases = styled.div`
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  grid-area: databases;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+`;
+export const Version = styled.div`
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  grid-area: version;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+`;
+export const Tools = styled.div`
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  grid-area: tools;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 30px;
   transition: all 0.2s ease-in-out;
 

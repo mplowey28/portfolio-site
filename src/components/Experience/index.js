@@ -17,16 +17,18 @@ const Experience = () => {
       <ExperienceWrapper>
         <ExperienceCard>
           <ExperienceImg src={Flowbox} alt="flowbox logo" />
-          <ExperienceH2>Front End Developer at Flowbox</ExperienceH2>
+          <ExperienceH2>
+            Team Lead and Front-end Developer at Flowbox
+          </ExperienceH2>
           <ExperienceP>Dec 2020 - Present</ExperienceP>
         </ExperienceCard>
         <ExperienceCard>
           <ExperienceImg src={Salt} alt="salt logo" />
           <ExperienceH2>
-            Full Stack JavaScript - School of Applied Technology &lt;/salt&gt;
+            Full-stack JavaScript - School of Applied Technology &lt;/salt&gt;
           </ExperienceH2>
           <ExperienceP>
-            Intensive three month training program for full stack web
+            Intensive three month training program for full-stack web
             development with a focus on TDD, mob programming, and applied
             learning.
           </ExperienceP>
