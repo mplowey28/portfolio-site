@@ -73,11 +73,10 @@ const Skills = () => {
               <Img src="https://img.icons8.com/fluent/node-js.png" />
               <TextContainer>Node.js/Express</TextContainer>
             </LineContainer>
-          </IconTextContainer>
-        </Backend>
-        <Databases>
-          <SkillsH2>Databases</SkillsH2>
-          <IconTextContainer>
+            <LineContainer>
+              <Img src="https://img.icons8.com/color/amazon-web-services.png" />
+              <TextContainer>AWS</TextContainer>
+            </LineContainer>
             <LineContainer>
               <Img src="https://img.icons8.com/color/firebase.png" />
               <TextContainer>FireBase</TextContainer>
@@ -91,7 +90,7 @@ const Skills = () => {
               <TextContainer>PostgreSQL</TextContainer>
             </LineContainer>
           </IconTextContainer>
-        </Databases>
+        </Backend>
         <Version>
           <SkillsH2>Version Control</SkillsH2>
           <IconTextContainer>

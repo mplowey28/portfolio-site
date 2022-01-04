@@ -14,23 +14,15 @@ export const SkillsWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "language backend version"
-    "frontend databases tools"
-    "frontend databases  tools";
+    "language backend "
+    "frontend tools "
+    "version tools";
   align-items: stretch;
   grid-gap: 16px;
   padding: 0 50px;
-
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "language  databases"
-      "frontend  version"
-      "backend   tools";
-  }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -38,7 +30,6 @@ export const SkillsWrapper = styled.div`
       "language"
       "frontend"
       "backend"
-      "databases"
       "version"
       "tools";
     padding: 0 20px;
