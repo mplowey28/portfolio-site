@@ -31,11 +31,6 @@ const Skills = () => {
               <Img src="https://img.icons8.com/color/typescript.png" />
               <TextContainer>TypeScript</TextContainer>
             </LineContainer>
-          </IconTextContainer>
-        </Language>
-        <Frontend>
-          <SkillsH2>Frontend</SkillsH2>
-          <IconTextContainer>
             <LineContainer>
               <Img src="https://img.icons8.com/color/html-5.png" />
               <TextContainer>HTML5</TextContainer>
@@ -44,6 +39,11 @@ const Skills = () => {
               <Img src="https://img.icons8.com/color/css3.png" />
               <TextContainer>CSS3</TextContainer>
             </LineContainer>
+          </IconTextContainer>
+        </Language>
+        <Frontend>
+          <SkillsH2>Frontend</SkillsH2>
+          <IconTextContainer>
             <LineContainer>
               <Img src="https://img.icons8.com/plasticine/react.png" />
               <TextContainer>React/React Native</TextContainer>
@@ -55,6 +55,10 @@ const Skills = () => {
             <LineContainer>
               <Img src="https://img.icons8.com/color/344/sass-avatar.png" />
               <TextContainer>SASS</TextContainer>
+            </LineContainer>
+            <LineContainer>
+              <Img src="https://styled-components.com/logo.png" />
+              <TextContainer>Styled-components</TextContainer>
             </LineContainer>
             <LineContainer>
               <Img src="https://img.icons8.com/color/material-ui.png" />
