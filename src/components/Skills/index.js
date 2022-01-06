@@ -1,6 +1,5 @@
 import {
   Backend,
-  Databases,
   Frontend,
   SkillsContainer,
   SkillsH1,
@@ -51,6 +50,10 @@ const Skills = () => {
             <LineContainer>
               <Img src="https://img.icons8.com/color/redux.png" />
               <TextContainer>Redux</TextContainer>
+            </LineContainer>
+            <LineContainer>
+              <Img src="https://www.chartjs.org/docs/latest/favicon.ico" />
+              <TextContainer>Chart.js</TextContainer>
             </LineContainer>
             <LineContainer>
               <Img src="https://img.icons8.com/color/344/sass-avatar.png" />
