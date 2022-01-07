@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #bebab4;
+  color: var(--color-text);
   background: var(--color-background);
   overflow: hidden;
 `;
@@ -46,24 +46,15 @@ export const TextWrapper = styled.div`
 export const Heading = styled.h1`
   padding-top: 40px;
   font-size: 2.5rem;
-  color: #f7f7f6;
+  color: var(--color-highlight);
   text-align: center;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 10px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
 `;
 
 export const SubTitle = styled.p`
   max-width: 440px;
   font-size: 18px;
   line-height: 24px;
-  color: #bebab4;
+  color: var(--color-text);
 
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -79,6 +70,5 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   border-radius: 50%;
-  border: 2px solid #f7f7f6;
   width: 100%;
 `;

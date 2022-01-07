@@ -49,16 +49,8 @@ export const ExperienceCard = styled.div`
 
 export const ExperienceH1 = styled.h1`
   font-size: 2.5rem;
-  color: #f7f7f6;
+  color: var(--color-highlight);
   margin-bottom: 20px;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }
 `;
 
 export const ExperienceH2 = styled.h2`

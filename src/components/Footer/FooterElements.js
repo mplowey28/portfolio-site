@@ -32,7 +32,7 @@ export const FooterInfo = styled.div`
   bottom: 10px;
 `;
 export const FooterText = styled.h2`
-  color: #f7f7f6;
+  color: var(--color-highlight);
 `;
 export const LinkedIn = styled.img`
   height: 40px;

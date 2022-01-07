@@ -8,28 +8,28 @@ import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
-import Timeline from "../components/Timeline";
+import Carousel from "../components/Carousel";
 
 const Home = () => {
-	const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-	const toggle = () => {
-		setIsOpen(!isOpen);
-	};
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-	return (
-		<>
-			<SideBar isOpen={isOpen} toggle={toggle} />
-			<Navbar toggle={toggle} />
-			<Hero />
-			<InfoSection {...homeObjOne} />
-			<Timeline />
-			<Skills />
-			<Experience />
-			<Contact />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <SideBar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <Hero />
+      <InfoSection {...homeObjOne} />
+      <Carousel />
+      <Skills />
+      <Experience />
+      <Contact />
+      <Footer />
+    </>
+  );
 };
 
 export default Home;

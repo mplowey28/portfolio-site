@@ -55,105 +55,20 @@ export const Language = styled.div`
     cursor: pointer;
   }
 `;
-export const Frontend = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 10px;
+export const Frontend = styled(Language)`
   grid-area: frontend;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
-export const Backend = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 10px;
+export const Backend = styled(Language)`
   grid-area: backend;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
-export const Databases = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 10px;
+export const Databases = styled(Language)`
   grid-area: databases;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
-export const Version = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 10px;
+export const Version = styled(Language)`
   grid-area: version;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
-export const Tools = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border-radius: 10px;
+export const Tools = styled(Language)`
   grid-area: tools;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
 
 export const SkillsH1 = styled.h1`
