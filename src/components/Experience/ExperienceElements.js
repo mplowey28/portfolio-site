@@ -29,15 +29,17 @@ export const ExperienceWrapper = styled.div`
 `;
 
 export const ExperienceCard = styled.div`
-  background: #f7f7f6;
+  background: rgba(24, 162, 217, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 10px;
   padding: 30px;
   margin-bottom: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -54,12 +56,14 @@ export const ExperienceH1 = styled.h1`
 `;
 
 export const ExperienceH2 = styled.h2`
+  color: var(--color-highlight);
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: center;
 `;
 
 export const ExperienceP = styled.p`
+  color: var(--color-highlight);
   font-size: 1rem;
   text-align: center;
 `;
