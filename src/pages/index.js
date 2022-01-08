@@ -8,7 +8,6 @@ import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
-import Carousel from "../components/Carousel";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,6 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Hero />
       <InfoSection {...homeObjOne} />
-      <Carousel />
       <Skills />
       <Experience />
       <Contact />
