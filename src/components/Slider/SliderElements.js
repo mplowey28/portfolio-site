@@ -10,46 +10,32 @@ export const SliderContainer = styled.div`
   align-items: center;
 `;
 
+export const SlideContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Img = styled.img`
   object-fit: scale-down;
-  width: 1000px;
-
-  @media screen and (max-width: 1200px) {
-    width: 900px;
-  }
-  @media screen and (max-width: 1000px) {
-    width: 600px;
-  }
-  @media screen and (max-width: 750px) {
-    width: 400px;
-  }
-  @media screen and (max-width: 460px) {
-    width: 200px;
+  width: 80%;
+  @media screen and (max-width: 480px) {
+    width: 70%;
   }
 `;
 
 export const Video = styled.video`
-  object-fit: scale-down;
-  width: 1000px;
-
-  @media screen and (max-width: 1200px) {
-    width: 900px;
-  }
-  @media screen and (max-width: 1000px) {
-    width: 600px;
-  }
-  @media screen and (max-width: 750px) {
-    width: 400px;
-  }
-  @media screen and (max-width: 460px) {
-    width: 200px;
+  object-fit: cover;
+  width: 80%;
+  @media screen and (max-width: 480px) {
+    width: 70%;
   }
 `;
 
 export const RightIcon = styled.div`
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 16px;
   font-size: 3rem;
   color: var(--color-text);
   z-index: 10;
@@ -58,7 +44,5 @@ export const RightIcon = styled.div`
 `;
 
 export const LeftIcon = styled(RightIcon)`
-  left: 32px;
+  left: 16px;
 `;
-
-export const SlideContainer = styled.div``;
