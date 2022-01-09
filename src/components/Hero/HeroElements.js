@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 import { MdKeyboardArrowDown, MdArrowDownward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #020104;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,10 +68,14 @@ export const UFO = styled.img`
   animation: ${flyby} 45s linear infinite;
 `;
 export const HeroContent = styled.div`
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;
-  padding: 100px 24px;
+  padding: 50px 30px;
   display: flex;
   direction: row;
   justify-content: space-around;

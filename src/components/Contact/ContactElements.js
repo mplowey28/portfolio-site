@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: var(--color-background);
-  padding: 50px 0;
+  padding: 50px 30px;
 `;
 
 export const ContactH1 = styled.h1`
@@ -16,19 +16,21 @@ export const ContactH1 = styled.h1`
   color: var(--color-highlight);
 `;
 export const ContactForm = styled.form`
-  background: #020104;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  -webkit-backdrop-filter: blur(2px);
   max-width: 400px;
   height: auto;
   width: 100%;
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 20px 32px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgb(0, 0, 0, 0.9);
+  padding: 30px;
 
   @media screen and (max-width: 400px) {
-    padding: 32px 32px;
+    padding: 30px;
   }
 `;
 

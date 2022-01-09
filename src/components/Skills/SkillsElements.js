@@ -7,7 +7,7 @@ export const SkillsContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: var(--color-background);
-  padding: 50px 0;
+  padding: 50px 30px;
 `;
 
 export const SkillsWrapper = styled.div`
@@ -22,7 +22,6 @@ export const SkillsWrapper = styled.div`
     "version tools";
   align-items: stretch;
   grid-gap: 16px;
-  padding: 0 50px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -32,16 +31,15 @@ export const SkillsWrapper = styled.div`
       "backend"
       "version"
       "tools";
-    padding: 0 20px;
   }
 `;
 
 export const Language = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
   border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  -webkit-backdrop-filter: blur(2px);
   grid-area: language;
   display: flex;
   flex-direction: column;

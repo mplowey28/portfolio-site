@@ -7,16 +7,15 @@ export const ExperienceContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: var(--color-background);
-  padding: 80px 0;
+  padding: 80px 30px;
 `;
 
 export const ExperienceWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   align-items: center;
-  padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
@@ -24,16 +23,15 @@ export const ExperienceWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
   }
 `;
 
 export const ExperienceCard = styled.div`
-  background: rgba(24, 162, 217, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
   border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  -webkit-backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

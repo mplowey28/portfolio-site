@@ -4,18 +4,24 @@ export const InfoContainer = styled.div`
   color: var(--color-text);
   background: var(--color-background);
   overflow: hidden;
+  padding: 0 30px;
 `;
 
 export const InfoWrapper = styled.div`
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  -webkit-backdrop-filter: blur(2px);
   height: auto;
   display: grid;
   z-index: 1;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
-  padding: 80px 0;
+  padding: 30px;
 `;
 
 export const InfoRow = styled.div`
