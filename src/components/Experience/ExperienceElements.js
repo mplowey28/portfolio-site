@@ -54,14 +54,14 @@ export const ExperienceH1 = styled.h1`
 `;
 
 export const ExperienceH2 = styled.h2`
-  color: var(--color-highlight);
+  color: var(--color-text);
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: center;
 `;
 
 export const ExperienceP = styled.p`
-  color: var(--color-highlight);
+  color: var(--color-text);
   font-size: 1rem;
   text-align: center;
 `;

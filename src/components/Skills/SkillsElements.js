@@ -85,7 +85,7 @@ export const SkillsH1 = styled.h1`
 `;
 
 export const SkillsH2 = styled.h2`
-  color: #fff;
+  color: var(--color-text);
   font-size: 1.25rem;
   margin: 10px 0;
   text-decoration: underline;
@@ -106,7 +106,7 @@ export const LineContainer = styled.div`
 `;
 
 export const TextContainer = styled.p`
-  color: #fff;
+  color: var(--color-text);
   display: flex;
   align-content: center;
   justify-content: center;
