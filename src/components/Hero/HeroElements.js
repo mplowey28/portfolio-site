@@ -75,7 +75,7 @@ export const HeroContent = styled.div`
   -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;
-  padding: 50px 30px;
+  margin: 80px 30px;
   display: flex;
   direction: row;
   justify-content: space-around;
@@ -91,7 +91,7 @@ export const HeroContentWrapper = styled.div`
   background: transparent;
   z-index: 3;
   max-width: 600px;
-  padding: 8px 24px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
