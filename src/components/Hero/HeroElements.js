@@ -170,88 +170,27 @@ export const Crater1 = styled.div`
     left: 7px;
   }
 `;
-export const Crater2 = styled.div`
-  background-color: #31b4ff;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  position: relative;
+export const Crater2 = styled(Crater1)`
   top: 15px;
   left: 61px;
   transform: scale(0.6);
-
-  :before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    box-shadow: -5px 0 0 2px #1ca4f9;
-    top: 2px;
-    left: 7px;
-  }
 `;
-export const Crater3 = styled.div`
-  background-color: #31b4ff;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  position: relative;
+
+export const Crater3 = styled(Crater1)`
   left: 15px;
   transform: scale(0.75);
-
-  :before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    box-shadow: -5px 0 0 2px #1ca4f9;
-    top: 2px;
-    left: 7px;
-  }
 `;
-export const Crater4 = styled.div`
-  background-color: #31b4ff;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  position: relative;
+
+export const Crater4 = styled(Crater1)`
   top: 32px;
   left: 107px;
   transform: scale(1.18);
-
-  :before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    box-shadow: -5px 0 0 2px #1ca4f9;
-    top: 2px;
-    left: 7px;
-  }
 `;
-export const Crater5 = styled.div`
-  background-color: #31b4ff;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  position: relative;
+
+export const Crater5 = styled(Crater1)`
   top: 4px;
   left: 33px;
   transform: scale(0.65);
-
-  :before {
-    content: "";
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    box-shadow: -5px 0 0 2px #1ca4f9;
-    top: 2px;
-    left: 7px;
-  }
 `;
 
 export const Shadow = styled.div`
@@ -272,11 +211,7 @@ export const LeftEye = styled.div`
   bottom: 255px;
   left: 59px;
 `;
-export const RightEye = styled.div`
-  height: 12px;
-  width: 12px;
-  background-color: #161616;
-  position: relative;
+export const RightEye = styled(LeftEye)`
   border-radius: 50%;
   bottom: 267px;
   left: 101px;
@@ -300,12 +235,7 @@ export const BlushLeft = styled.div`
   bottom: 273px;
   left: 50px;
 `;
-export const BlushRight = styled.div`
-  height: 7.5px;
-  width: 7.5px;
-  background-color: #1ca4f9;
-  position: relative;
-  border-radius: 50%;
+export const BlushRight = styled(BlushLeft)`
   bottom: 281px;
   left: 115px;
 `;
@@ -316,7 +246,6 @@ const spin = keyframes`
   }
 
 `;
-
 export const Orbit = styled.div`
   height: 280px;
   width: 280px;
