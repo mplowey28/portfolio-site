@@ -52,7 +52,7 @@ export const ContactTextArea = styled.textarea`
   height: 100px;
 `;
 export const FormButton = styled.button`
-  background: ${({ primary }) => (primary ? "#f7f7f6" : "#bebab4")};
+  background: var(--color-text);
   margin-top: 16px;
   padding: 16px 0;
   border: none;
