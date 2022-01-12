@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Slider from "../components/Slider";
+import Starfield from "../components/Starfield";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const Home = () => {
 
   return (
     <>
+      <Starfield />
       <SideBar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
