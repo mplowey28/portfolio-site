@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StarfieldCanvas = styled.canvas`
+export const StarfieldCanvas = styled.div`
   background: red;
   display: block;
   position: absolute;
