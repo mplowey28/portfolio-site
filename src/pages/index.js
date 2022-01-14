@@ -8,8 +8,8 @@ import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
-import Slider from "../components/Slider";
 import Starfield from "../components/Starfield";
+import ProjectSlider from "../components/ProjectSlider";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Hero />
       <InfoSection {...homeObjOne} />
-      <Slider />
+      <ProjectSlider />
       <Skills />
       <Experience />
       <Contact />
