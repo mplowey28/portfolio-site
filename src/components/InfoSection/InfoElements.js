@@ -50,10 +50,19 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  padding-top: 40px;
   font-size: 2.5rem;
-  color: var(--color-highlight);
+  color: #f7f7f6;
+  margin-bottom: 20px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
 `;
 
 export const SubTitle = styled.p`

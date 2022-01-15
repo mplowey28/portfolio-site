@@ -11,9 +11,18 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactH1 = styled.h1`
-  margin-top: 20px;
   font-size: 2.5rem;
-  color: var(--color-highlight);
+  color: #f7f7f6;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
 `;
 export const ContactForm = styled.form`
   background-color: rgba(255, 255, 255, 0.13);
