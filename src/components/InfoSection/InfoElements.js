@@ -4,7 +4,7 @@ export const InfoContainer = styled.div`
   color: var(--color-text);
   background: var(--color-background);
   overflow: hidden;
-  padding: 0 30px;
+  padding: 200px 30px;
 `;
 
 export const InfoWrapper = styled.div`

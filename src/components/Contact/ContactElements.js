@@ -36,7 +36,7 @@ export const ContactForm = styled.form`
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 30px;
+  padding: 1rem;
 
   @media screen and (max-width: 400px) {
     padding: 30px;

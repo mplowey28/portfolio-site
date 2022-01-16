@@ -47,7 +47,7 @@ export const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 1rem;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -74,16 +74,22 @@ export const ProjectImgLink = styled.div`
     height: 200px;
     object-fit: scale-down;
     @media screen and (max-width: 480px) {
-    height: 100px;
-  }
+      height: 100px;
+    }
   }
 
   video {
     height: 200px;
     object-fit: scale-down;
     @media screen and (max-width: 480px) {
-    height: 100px;
+      height: 100px;
+    }
   }
+`;
+
+export const ProjectDescription = styled.div`
+  padding: 2rem;
+  text-align: justify;
 `;
 
 export const LinkContainer = styled.div`
@@ -106,9 +112,9 @@ export const LiveDemoContainer = styled.a`
   text-decoration: none;
   box-shadow: 0 0 5px #787878;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 16px;
   height: 30px;
   width: 100px;
   transition: all 0.2s ease-in-out;

@@ -14,14 +14,13 @@ export const SkillsWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "language backend "
-    "frontend tools "
-    "version tools";
+    "language backend tools"
+    "frontend version tools";
   align-items: stretch;
-  grid-gap: 16px;
+  grid-gap: 1rem;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -44,7 +43,7 @@ export const Language = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 1rem;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -59,9 +58,7 @@ export const Frontend = styled(Language)`
 export const Backend = styled(Language)`
   grid-area: backend;
 `;
-export const Databases = styled(Language)`
-  grid-area: databases;
-`;
+
 export const Version = styled(Language)`
   grid-area: version;
 `;

@@ -14,8 +14,9 @@ export const ExperienceWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: stretch;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
@@ -36,7 +37,7 @@ export const ExperienceCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 30px;
+  padding: 1rem;
   margin-bottom: 20px;
   transition: all 0.2s ease-in-out;
 

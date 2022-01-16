@@ -9,6 +9,7 @@ import {
   LinkContainer,
   LiveDemoContainer,
   ProjectTitle,
+  ProjectDescription,
 } from "./ProjectSliderElements";
 import { FaGithub, FaPlay } from "react-icons/fa";
 
@@ -34,7 +35,7 @@ const ProjectSlider = () => {
                   />
                 )}
               </ProjectImgLink>
-              <p>{card.desc}</p>
+              <ProjectDescription>{card.desc}</ProjectDescription>
               <LinkContainer>
                 <LiveDemoContainer
                   href={card.github}
