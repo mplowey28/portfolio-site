@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
 import { Button } from "../ButtonElement";
 import {
   ArrowForward,
@@ -11,7 +10,6 @@ import {
   Crater3,
   Crater4,
   Crater5,
-  HeroBg,
   HeroBtnWrapper,
   HeroContainer,
   HeroContent,
@@ -27,7 +25,6 @@ import {
   Rocket,
   Shadow,
   UFO,
-  VideoBg,
   Window,
 } from "./HeroElements";
 import ufo from "../../assests/images/ufo.svg";
@@ -41,9 +38,6 @@ const Hero = () => {
 
   return (
     <HeroContainer id="hero">
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg>
       <UFO src={ufo} alt="ufo" />
       <HeroContent>
         <HeroContentWrapper>

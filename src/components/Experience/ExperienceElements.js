@@ -6,7 +6,7 @@ export const ExperienceContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-background);
+  background: transparent;
   padding: 80px 30px;
 `;
 

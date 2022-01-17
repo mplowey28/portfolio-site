@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: var(--color-text);
-  background: var(--color-background);
+  background: transparent;
   overflow: hidden;
   padding: 200px 30px;
 `;

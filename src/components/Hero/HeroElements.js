@@ -10,40 +10,6 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
-
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
-  }
-`;
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
-
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #020104;
 `;
 
 const flyby = keyframes`
@@ -68,6 +34,11 @@ export const UFO = styled.img`
   animation: ${flyby} 45s linear infinite;
 `;
 export const HeroContent = styled.div`
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;
   margin: 80px 30px;
@@ -103,7 +74,7 @@ export const HeroH1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 26px;
+    font-size: 1.5rem;
   }
 `;
 export const NameSpan = styled.span`
