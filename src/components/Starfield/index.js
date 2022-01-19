@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState, useEffect, Suspense } from "react";
+import React, { useMemo, useRef, Suspense } from "react";
 import * as THREE from "three";
 import { StarfieldCanvas } from "./StarfieldElements";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
@@ -7,9 +7,6 @@ import sp1 from "../../assests/images/sp1.png";
 
 const Stars = () => {
   const mesh = useRef();
-  const [isActive, setIsActive] = useState(false);
-
-  const isActiveRef = useRef(isActive);
 
   const position = useMemo(() => {
     return [
@@ -20,16 +17,9 @@ const Stars = () => {
   }, []);
 
   const colors = ["#18A2D9", "#FFF"];
-
-  const color = isActive
-    ? "#f4442c"
-    : colors[Math.floor(Math.random() * colors.length)];
-
-  useEffect(() => {
-    isActiveRef.current = isActive;
-  }, [isActive]);
-
+  const color = colors[Math.floor(Math.random() * colors.length)];
   const texture = useLoader(THREE.TextureLoader, sp1);
+
   return (
     <mesh ref={mesh} position={position}>
       <planeBufferGeometry attach="geometry" args={[0.01, 0.01]} />
