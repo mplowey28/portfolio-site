@@ -60,7 +60,7 @@ const Cubes = () => {
 const Starfield = () => {
   return (
     <StarfieldCanvas>
-      <Canvas camera={{ position: [0, 0, 0.5], near: 0.01, far: 10000 }}>
+      <Canvas camera={{ position: [0, 0, 2], near: 1.5, far: 5 }}>
         <color attach="background" args={["black"]} />
         <Suspense fallback={null}>
           <Cubes />
