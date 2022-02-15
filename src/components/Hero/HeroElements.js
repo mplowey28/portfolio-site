@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { MdKeyboardArrowDown, MdArrowDownward } from "react-icons/md";
+import styled, { keyframes } from 'styled-components'
+import { MdKeyboardArrowDown, MdArrowDownward } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
-`;
+`
 
 const flyby = keyframes`
   from {
@@ -20,7 +20,7 @@ const flyby = keyframes`
   to {
     transform: translateX(4000px)
   }
-`;
+`
 
 export const UFO = styled.img`
   z-index: 4;
@@ -32,7 +32,7 @@ export const UFO = styled.img`
   width: 40px;
   margin-top: 80px;
   animation: ${flyby} 45s linear infinite;
-`;
+`
 export const HeroContent = styled.div`
   background-color: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(2px);
@@ -41,7 +41,7 @@ export const HeroContent = styled.div`
   -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;
-  margin: 80px 30px;
+  margin: 80px 16px;
   display: flex;
   direction: row;
   justify-content: space-around;
@@ -52,7 +52,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     justify-content: flex-start;
   }
-`;
+`
 export const HeroContentWrapper = styled.div`
   background: transparent;
   z-index: 3;
@@ -63,7 +63,7 @@ export const HeroContentWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-`;
+`
 export const HeroH1 = styled.h1`
   color: var(--color-text);
   font-size: 36px;
@@ -76,7 +76,7 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
   }
-`;
+`
 export const NameSpan = styled.span`
   color: #f7f7f6;
   font-size: 36px;
@@ -88,37 +88,37 @@ export const NameSpan = styled.span`
   @media screen and (max-width: 480px) {
     font-size: 26px;
   }
-`;
+`
 
 export const HeroBtnWrapper = styled.div`
   margin: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 export const ArrowForward = styled(MdArrowDownward)`
   margin-left: 8px;
   font-size: 20px;
-`;
+`
 
 export const ArrowRight = styled(MdKeyboardArrowDown)`
   margin-left: 8px;
   font-size: 20px;
-`;
+`
 export const MoonContainer = styled.div`
   height: 370px;
   width: 370px;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 export const Moon = styled.div`
   background-color: #39beff;
   height: 170px;
   width: 170px;
   border-radius: 50%;
   overflow: hidden;
-`;
+`
 
 export const Crater1 = styled.div`
   background-color: #31b4ff;
@@ -131,7 +131,7 @@ export const Crater1 = styled.div`
   transform: scale(0.9);
 
   :before {
-    content: "";
+    content: '';
     position: absolute;
     height: 25px;
     width: 25px;
@@ -140,29 +140,29 @@ export const Crater1 = styled.div`
     top: 2px;
     left: 7px;
   }
-`;
+`
 export const Crater2 = styled(Crater1)`
   top: 15px;
   left: 61px;
   transform: scale(0.6);
-`;
+`
 
 export const Crater3 = styled(Crater1)`
   left: 15px;
   transform: scale(0.75);
-`;
+`
 
 export const Crater4 = styled(Crater1)`
   top: 32px;
   left: 107px;
   transform: scale(1.18);
-`;
+`
 
 export const Crater5 = styled(Crater1)`
   top: 4px;
   left: 33px;
   transform: scale(0.65);
-`;
+`
 
 export const Shadow = styled.div`
   height: 190px;
@@ -172,7 +172,7 @@ export const Shadow = styled.div`
   position: relative;
   bottom: 157.5px;
   right: 46px;
-`;
+`
 export const LeftEye = styled.div`
   height: 12px;
   width: 12px;
@@ -181,12 +181,12 @@ export const LeftEye = styled.div`
   border-radius: 50%;
   bottom: 255px;
   left: 59px;
-`;
+`
 export const RightEye = styled(LeftEye)`
   border-radius: 50%;
   bottom: 267px;
   left: 101px;
-`;
+`
 export const Mouth = styled.div`
   height: 5px;
   width: 10px;
@@ -196,7 +196,7 @@ export const Mouth = styled.div`
   left: 82px;
   border-top: none;
   border-radius: 0 0 10px 10px;
-`;
+`
 export const BlushLeft = styled.div`
   height: 7.5px;
   width: 7.5px;
@@ -205,25 +205,25 @@ export const BlushLeft = styled.div`
   border-radius: 50%;
   bottom: 273px;
   left: 50px;
-`;
+`
 export const BlushRight = styled(BlushLeft)`
   bottom: 281px;
   left: 115px;
-`;
+`
 
 const spin = keyframes`
  100% {
     transform: rotate(360deg);
   }
 
-`;
+`
 export const Orbit = styled.div`
   height: 280px;
   width: 280px;
   border-radius: 50%;
   position: absolute;
   animation: ${spin} 10s infinite linear;
-`;
+`
 export const Rocket = styled.div`
   background-color: #fafcf7;
   height: 50px;
@@ -234,7 +234,7 @@ export const Rocket = styled.div`
   top: 115px;
 
   :before {
-    content: "";
+    content: '';
     position: absolute;
     background-color: #39beff;
     height: 20px;
@@ -245,7 +245,7 @@ export const Rocket = styled.div`
     bottom: 0;
   }
   :after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: #39beff;
     height: 4px;
@@ -254,7 +254,7 @@ export const Rocket = styled.div`
     bottom: -4px;
     left: 4.3px;
   }
-`;
+`
 export const Window = styled.div`
   height: 10px;
   width: 10px;
@@ -264,4 +264,4 @@ export const Window = styled.div`
   position: relative;
   top: 17px;
   left: 7px;
-`;
+`

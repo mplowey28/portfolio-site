@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SliderContainer = styled.div`
   height: auto;
@@ -8,7 +8,7 @@ export const SliderContainer = styled.div`
   align-items: center;
   background: transparent;
   padding: 50px 30px;
-`;
+`
 
 export const ProjectCardsWrapper = styled.div`
   max-width: 1200px;
@@ -20,22 +20,7 @@ export const ProjectCardsWrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`;
-
-export const Heading = styled.h1`
-  font-size: 2.5rem;
-  color: #f7f7f6;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
-`;
+`
 
 export const ProjectCard = styled.div`
   color: var(--color-text);
@@ -55,14 +40,14 @@ export const ProjectCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
-`;
+`
 
 export const ProjectTitle = styled.h2`
   color: var(--color-text);
   font-size: 1.25rem;
   margin: 10px 0;
   text-decoration: underline;
-`;
+`
 
 export const ProjectImgLink = styled.div`
   display: flex;
@@ -85,12 +70,12 @@ export const ProjectImgLink = styled.div`
       height: 100px;
     }
   }
-`;
+`
 
 export const ProjectDescription = styled.div`
   padding: 2rem;
   text-align: justify;
-`;
+`
 
 export const LinkContainer = styled.div`
   max-width: 80%;
@@ -98,7 +83,7 @@ export const LinkContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
-`;
+`
 
 export const LiveDemoContainer = styled.a`
   background: var(--color-text);
@@ -121,7 +106,7 @@ export const LiveDemoContainer = styled.a`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#bebab4" : "#f7f7f6")};
+    background: ${({ primary }) => (primary ? '#bebab4' : '#f7f7f6')};
   }
 
   a:hover,
@@ -135,4 +120,4 @@ export const LiveDemoContainer = styled.a`
   @media screen and (max-width: 480px) {
     font-size: 0.75rem;
   }
-`;
+`

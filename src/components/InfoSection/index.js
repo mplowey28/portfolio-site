@@ -1,4 +1,4 @@
-import photo from "../../assests/images/me.jpg";
+import photo from '../../assests/images/me.jpg'
 
 import {
   InfoContainer,
@@ -7,17 +7,16 @@ import {
   Column1,
   Column2,
   TextWrapper,
-  Heading,
   SubTitle,
   ImgWrap,
   Img,
-} from "./InfoElements";
+} from './InfoElements'
 
 const InfoSection = ({ id, imgStart, headline, alt }) => {
   return (
     <>
       <InfoContainer id={id}>
-        <Heading>{headline}</Heading>
+        <h1>{headline}</h1>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -44,7 +43,7 @@ const InfoSection = ({ id, imgStart, headline, alt }) => {
         </InfoWrapper>
       </InfoContainer>
     </>
-  );
-};
+  )
+}
 
-export default InfoSection;
+export default InfoSection

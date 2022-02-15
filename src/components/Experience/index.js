@@ -1,29 +1,28 @@
 import {
   ExperienceContainer,
   ExperienceWrapper,
-  ExperienceH1,
   ExperienceCard,
   ExperienceImg,
   ExperienceH2,
   ExperienceP,
-} from "./ExperienceElements";
-import Salt from "../../assests/images/salt.jpg";
-import Flowbox from "../../assests/images/flowbox.png";
+} from './ExperienceElements'
+import Salt from '../../assests/images/salt.jpg'
+import Flowbox from '../../assests/images/flowbox.png'
 
 const Experience = () => {
   return (
-    <ExperienceContainer id="experience">
-      <ExperienceH1>Experience</ExperienceH1>
+    <ExperienceContainer id='experience'>
+      <h1>Experience</h1>
       <ExperienceWrapper>
         <ExperienceCard>
-          <ExperienceImg src={Flowbox} alt="flowbox logo" />
+          <ExperienceImg src={Flowbox} alt='flowbox logo' />
           <ExperienceH2>
             Team Lead and Front-end Developer at Flowbox
           </ExperienceH2>
           <ExperienceP>Dec 2020 - Present</ExperienceP>
         </ExperienceCard>
         <ExperienceCard>
-          <ExperienceImg src={Salt} alt="salt logo" />
+          <ExperienceImg src={Salt} alt='salt logo' />
           <ExperienceH2>
             Full-stack JavaScript - School of Applied Technology &lt;/salt&gt;
           </ExperienceH2>
@@ -35,7 +34,7 @@ const Experience = () => {
         </ExperienceCard>
       </ExperienceWrapper>
     </ExperienceContainer>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience

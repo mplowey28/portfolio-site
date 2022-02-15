@@ -2,7 +2,6 @@ import React from 'react'
 import { sliderData } from './content'
 import {
   SliderContainer,
-  Heading,
   ProjectCard,
   ProjectImgLink,
   LinkContainer,
@@ -53,7 +52,7 @@ const slides = sliderData.map((card) => {
 const ProjectSlider = () => {
   return (
     <SliderContainer id='projects'>
-      <Heading>Projects</Heading>
+      <h1>Projects</h1>
       <AliceCarousel items={slides} />
     </SliderContainer>
   )
