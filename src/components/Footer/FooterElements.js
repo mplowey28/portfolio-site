@@ -13,7 +13,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 220px;
+  height: 230px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
@@ -46,8 +46,8 @@ export const GitHub = styled.img`
 
 export const Telescope = styled.img`
   position: absolute;
-  right: 40px;
-  bottom: 60px;
+  right: 50px;
+  bottom: 70px;
   width: 40px;
   height: 40px;
 `
