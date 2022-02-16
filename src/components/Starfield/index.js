@@ -1,63 +1,56 @@
-import React, { useMemo, useRef, Suspense } from "react";
-import * as THREE from "three";
-import { StarfieldCanvas } from "./StarfieldElements";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { map, random } from "lodash";
-import sp1 from "../../assests/images/sp1.png";
+import React, { useEffect, useRef, useState } from 'react'
+import { StarfieldCanvas } from './StarfieldElements'
+import sp1 from '../../assests/images/sp1.png'
+import sp2 from '../../assests/images/sp2.png'
 
-const Stars = () => {
-  const mesh = useRef();
+const colors = ['#18A2D9', '#FFF']
+const textures = [sp1, sp2]
+const numStars = 200
 
-  const position = useMemo(() => {
-    return [
-      random(-3.5, 3.5, true),
-      random(-3.5, 3.5, true),
-      random(-3.5, 3.5, true),
-    ];
-  }, []);
-
-  const colors = ["#18A2D9", "#FFF"];
-  const color = colors[Math.floor(Math.random() * colors.length)];
-  const texture = useLoader(THREE.TextureLoader, sp1);
-
-  return (
-    <mesh ref={mesh} position={position}>
-      <planeBufferGeometry attach="geometry" args={[0.01, 0.01]} />
-      <meshBasicMaterial
-        attach="material"
-        map={texture}
-        color={color}
-        transparent={true}
-      />
-    </mesh>
-  );
-};
-
-const Cubes = () => {
-  const group = useRef();
-
-  useFrame(() => {
-    group.current.rotation.y += 0.0001;
-  });
-
-  const nodesCubes = map(new Array(5000), (el, i) => {
-    return <Stars key={i} />;
-  });
-
-  return <group ref={group}>{nodesCubes}</group>;
-};
+const randomNumber = (min, max) => Math.random() * (max - min) + min
 
 const Starfield = () => {
-  return (
-    <StarfieldCanvas>
-      <Canvas camera={{ position: [0, 0, 2], near: 1.5, far: 5 }}>
-        <color attach="background" args={["black"]} />
-        <Suspense fallback={null}>
-          <Cubes />
-        </Suspense>
-      </Canvas>
-    </StarfieldCanvas>
-  );
-};
+  const ref = useRef(null)
+  const [fieldWidth, setWidth] = useState(0)
+  const [fieldHeight, setHeight] = useState(0)
 
-export default Starfield;
+  useEffect(() => {
+    const winWidth = ref.current.clientWidth
+    const winHeight = ref.current.clientHeight
+    setHeight(winHeight)
+    setWidth(winWidth)
+  }, [ref])
+
+  let stars = []
+  for (let index = 0; index < numStars; index++) {
+    const size = Math.floor(Math.random() * 30)
+    const color = colors[Math.floor(Math.random() * colors.length)]
+    const texture = textures[Math.floor(Math.random() * textures.length)]
+    const star = {
+      color,
+      src: texture,
+      height: size,
+      width: size,
+      top: randomNumber(0, fieldHeight),
+      left: randomNumber(0, fieldWidth),
+    }
+    stars.push(star)
+  }
+
+  return (
+    <StarfieldCanvas ref={ref}>
+      {stars.map((star, i) => (
+        <img
+          key={i}
+          style={{ position: 'absolute', left: star.left, top: star.top }}
+          src={star.src}
+          color={star.color}
+          height={star.height}
+          width={star.width}
+        />
+      ))}
+    </StarfieldCanvas>
+  )
+}
+
+export default Starfield
