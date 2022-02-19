@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 24px;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -41,7 +41,6 @@ export const HeroContent = styled.div`
   -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;
-  margin: 80px 16px;
   display: flex;
   direction: row;
   justify-content: space-around;
@@ -66,8 +65,8 @@ export const HeroContentWrapper = styled.div`
 `
 export const HeroH1 = styled.h1`
   color: var(--color-text);
-  font-size: 36px;
-  padding: 20px;
+  font-size: 32px;
+  padding: 24px;
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
@@ -79,31 +78,31 @@ export const HeroH1 = styled.h1`
 `
 export const NameSpan = styled.span`
   color: #f7f7f6;
-  font-size: 36px;
+  font-size: 32px;
 
   @media screen and (max-width: 768px) {
     font-size: 32px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 26px;
+    font-size: 24px;
   }
 `
 
 export const HeroBtnWrapper = styled.div`
-  margin: 10px 0;
+  margin: 16px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
 export const ArrowForward = styled(MdArrowDownward)`
   margin-left: 8px;
-  font-size: 20px;
+  font-size: 24px;
 `
 
 export const ArrowRight = styled(MdKeyboardArrowDown)`
   margin-left: 8px;
-  font-size: 20px;
+  font-size: 24px;
 `
 export const MoonContainer = styled.div`
   height: 370px;

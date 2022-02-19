@@ -11,7 +11,7 @@ export const ExperienceContainer = styled.div`
 `
 
 export const ExperienceWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;

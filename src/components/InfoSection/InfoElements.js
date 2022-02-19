@@ -3,12 +3,13 @@ import styled from 'styled-components'
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: var(--color-text);
-  background: transparent;
   justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
   overflow: hidden;
-  padding: 200px 30px;
 `
 
 export const InfoWrapper = styled.div`
@@ -17,61 +18,57 @@ export const InfoWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   -webkit-backdrop-filter: blur(2px);
-  height: auto;
-  display: grid;
-  z-index: 1;
-  width: 100%;
+  z-index: 3;
   max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-  padding: 30px;
-`
-
-export const InfoRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
+  display: flex;
+  direction: row;
+  justify-content: space-around;
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  text-align: center;
+  padding: 1rem;
 
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  @media screen and (max-width: 875px) {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 `
 
-export const Column1 = styled.div`
-  grid-area: col1;
-`
-
-export const Column2 = styled.div`
-  grid-area: col2;
-`
-
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  background: transparent;
+  z-index: 3;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `
 
 export const SubTitle = styled.p`
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 24px;
   color: var(--color-text);
+  font-size: 24px;
+  padding: 24px;
 
   @media screen and (max-width: 768px) {
-    text-align: center;
-    padding: 0 10px;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
   }
 `
 
 export const ImgWrap = styled.div`
-  max-width: 300px;
-  margin: auto;
-  height: 100%;
+  height: 340px;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Img = styled.img`
   border-radius: 50%;
-  width: 100%;
+  height: 340px;
+  width: 340px;
 `

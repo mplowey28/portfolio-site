@@ -13,11 +13,17 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 230px;
+  height: 500px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
   bottom: 0;
+  @media screen and (max-width: 1000px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 230px;
+  }
 `
 export const LinksWrapper = styled.div`
   justify-content: center;
