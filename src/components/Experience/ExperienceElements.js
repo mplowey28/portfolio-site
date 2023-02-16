@@ -1,14 +1,14 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ExperienceContainer = styled.div`
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: transparent;
   padding: 80px 30px;
-`
+`;
 
 export const ExperienceWrapper = styled.div`
   max-width: 1200px;
@@ -25,7 +25,7 @@ export const ExperienceWrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const ExperienceCard = styled.div`
   background-color: rgba(255, 255, 255, 0.13);
@@ -46,20 +46,20 @@ export const ExperienceCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
-`
+`;
 
 export const ExperienceH2 = styled.h2`
   color: var(--color-text);
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: center;
-`
+`;
 
 export const ExperienceP = styled.p`
   color: var(--color-text);
   font-size: 1rem;
   text-align: center;
-`
+`;
 
 export const ExperienceImg = styled.img`
   width: 100%;
@@ -68,4 +68,4 @@ export const ExperienceImg = styled.img`
   object-fit: cover;
   background: white;
   margin-bottom: 20px;
-`
+`;

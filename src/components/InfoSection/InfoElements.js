@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const InfoContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
-`
+`;
 
 export const InfoWrapper = styled.div`
   background-color: rgba(255, 255, 255, 0.13);
@@ -31,7 +31,7 @@ export const InfoWrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
   }
-`
+`;
 
 export const TextWrapper = styled.div`
   background: transparent;
@@ -43,7 +43,7 @@ export const TextWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-`
+`;
 
 export const SubTitle = styled.p`
   color: var(--color-text);
@@ -57,7 +57,7 @@ export const SubTitle = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
   }
-`
+`;
 
 export const ImgWrap = styled.div`
   height: 340px;
@@ -65,10 +65,10 @@ export const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const Img = styled.img`
   border-radius: 50%;
   height: 340px;
   width: 340px;
-`
+`;
