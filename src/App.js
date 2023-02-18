@@ -1,12 +1,12 @@
-import { BrowserRouter as Router } from 'react-router-dom'
-import { createGlobalStyle } from 'styled-components'
+import { BrowserRouter as Router } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
 
-import Home from './pages'
+import Home from "./pages";
 
 const GlobalStyles = createGlobalStyle`
   html {
     --color-text: #18A2D9;
-    --color-background: black;
+    --color-background: hsl(223,39%,12%);
     --color-highlight: #FFF;
   }
 
@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     margin-top: 40px;
   }
   }
-`
+`;
 
 const App = () => {
   return (
@@ -32,7 +32,7 @@ const App = () => {
       <GlobalStyles />
       <Home />
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;
