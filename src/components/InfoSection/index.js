@@ -11,7 +11,7 @@ import {
 
 const InfoSection = ({ id, imgStart, headline, alt }) => {
   return (
-    <SectionWrapper id={id}>
+    <SectionWrapper percentHeight id={id}>
       <h1>{headline}</h1>
       <InfoWrapper>
         <ImgWrap>
