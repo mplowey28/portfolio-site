@@ -11,7 +11,6 @@ import {
   Crater4,
   Crater5,
   HeroBtnWrapper,
-  HeroContainer,
   HeroContent,
   HeroContentWrapper,
   HeroH1,
@@ -28,6 +27,7 @@ import {
   Window,
 } from "./HeroElements";
 import ufo from "../../assests/images/ufo.svg";
+import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
 
 const Hero = () => {
   const [hover, setHover] = useState(false);
@@ -37,7 +37,7 @@ const Hero = () => {
   };
 
   return (
-    <HeroContainer id="hero">
+    <SectionWrapper id="hero">
       <UFO src={ufo} alt="ufo" />
       <HeroContent>
         <HeroContentWrapper>
@@ -72,7 +72,7 @@ const Hero = () => {
           </Orbit>
         </MoonContainer>
       </HeroContent>
-    </HeroContainer>
+    </SectionWrapper>
   );
 };
 

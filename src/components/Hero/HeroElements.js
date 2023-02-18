@@ -1,18 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { MdKeyboardArrowDown, MdArrowDownward } from "react-icons/md";
 
-export const HeroContainer = styled.div`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 24px;
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-`;
-
 const flyby = keyframes`
   from {
     transform: translateX(-100)
@@ -44,7 +32,6 @@ export const HeroContent = styled.div`
   max-width: 1200px;
   display: flex;
   direction: row;
-  justify-content: space-around;
   align-items: center;
   text-align: center;
 
@@ -57,7 +44,6 @@ export const HeroContentWrapper = styled.div`
   background: transparent;
   z-index: 3;
   max-width: 600px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;

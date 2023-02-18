@@ -35,7 +35,7 @@ const Footer = () => {
           </LinksWrapper>
           <FooterText>
             <span dangerouslySetInnerHTML={{ __html: "&copy;" }} /> Matthew
-            Plowey 2022
+            Plowey 2023
           </FooterText>
         </FooterInfo>
         <Telescope src={telescope} alt="telescope" />

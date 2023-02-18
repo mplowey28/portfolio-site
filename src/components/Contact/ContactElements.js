@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  padding: 50px 30px;
-`;
-
 export const ContactForm = styled.form`
   background-color: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(2px);

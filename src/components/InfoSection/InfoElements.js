@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const InfoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 24px;
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-`;
-
 export const InfoWrapper = styled.div`
   background-color: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(2px);

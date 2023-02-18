@@ -1,5 +1,4 @@
 import {
-  ExperienceContainer,
   ExperienceWrapper,
   ExperienceCard,
   ExperienceImg,
@@ -8,10 +7,11 @@ import {
 } from "./ExperienceElements";
 import Salt from "../../assests/images/salt.jpg";
 import Flowbox from "../../assests/images/flowbox.png";
+import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
 
 const Experience = () => {
   return (
-    <ExperienceContainer id="experience">
+    <SectionWrapper id="experience">
       <h1>Experience</h1>
       <ExperienceWrapper>
         <ExperienceCard>
@@ -39,7 +39,7 @@ const Experience = () => {
           </ExperienceP>
         </ExperienceCard>
       </ExperienceWrapper>
-    </ExperienceContainer>
+    </SectionWrapper>
   );
 };
 

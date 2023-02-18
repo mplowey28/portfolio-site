@@ -1,17 +1,17 @@
-import photo from '../../assests/images/me.jpg'
+import photo from "../../assests/images/me.jpg";
+import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
 
 import {
-  InfoContainer,
   InfoWrapper,
   TextWrapper,
   SubTitle,
   ImgWrap,
   Img,
-} from './InfoElements'
+} from "./InfoElements";
 
 const InfoSection = ({ id, imgStart, headline, alt }) => {
   return (
-    <InfoContainer id={id}>
+    <SectionWrapper id={id}>
       <h1>{headline}</h1>
       <InfoWrapper>
         <ImgWrap>
@@ -30,8 +30,8 @@ const InfoSection = ({ id, imgStart, headline, alt }) => {
           </SubTitle>
         </TextWrapper>
       </InfoWrapper>
-    </InfoContainer>
-  )
-}
+    </SectionWrapper>
+  );
+};
 
-export default InfoSection
+export default InfoSection;
