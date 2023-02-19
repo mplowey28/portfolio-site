@@ -1,5 +1,6 @@
 import photo from "../../assests/images/me.jpg";
-import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
+import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 import {
   InfoWrapper,
@@ -7,12 +8,12 @@ import {
   SubTitle,
   ImgWrap,
   Img,
-} from "./InfoElements";
+} from "./AboutElements";
 
-const InfoSection = ({ id, imgStart, headline, alt }) => {
+const About = ({ id, headline, alt }) => {
   return (
     <SectionWrapper percentHeight id={id}>
-      <h1>{headline}</h1>
+      <SectionHeader>{headline}</SectionHeader>
       <InfoWrapper>
         <ImgWrap>
           <Img src={photo} alt={alt} />
@@ -34,4 +35,4 @@ const InfoSection = ({ id, imgStart, headline, alt }) => {
   );
 };
 
-export default InfoSection;
+export default About;

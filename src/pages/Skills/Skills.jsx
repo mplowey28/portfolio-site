@@ -11,12 +11,13 @@ import {
   Version,
   Tools,
 } from "./SkillsElements";
-import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
+import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 const Skills = () => {
   return (
     <SectionWrapper percentHeight id="skills">
-      <h1>Skills</h1>
+      <SectionHeader>Skills</SectionHeader>
       <SkillsWrapper>
         <Language>
           <SkillsH2>Programming Languages</SkillsH2>

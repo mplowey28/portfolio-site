@@ -5,7 +5,8 @@ import {
   ContactTextArea,
   FormButton,
 } from "./ContactElements";
-import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
+import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -34,7 +35,7 @@ const Contact = () => {
 
   return (
     <SectionWrapper lastChild id="contact">
-      <h1>Contact</h1>
+      <SectionHeader>Contact</SectionHeader>
       <ContactForm onSubmit={handleSubmit}>
         <ContactInput
           type="text"

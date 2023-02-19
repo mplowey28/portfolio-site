@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../ButtonElement";
+import { Button } from "../../components/ButtonElement";
 import {
   ArrowForward,
   ArrowRight,
@@ -27,7 +27,7 @@ import {
   Window,
 } from "./HeroElements";
 import ufo from "../../assests/images/ufo.svg";
-import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
+import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
 
 const Hero = () => {
   const [hover, setHover] = useState(false);

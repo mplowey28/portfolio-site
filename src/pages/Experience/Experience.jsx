@@ -7,12 +7,13 @@ import {
 } from "./ExperienceElements";
 import Salt from "../../assests/images/salt.jpg";
 import Flowbox from "../../assests/images/flowbox.png";
-import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
+import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 const Experience = () => {
   return (
-    <SectionWrapper id="experience">
-      <h1>Experience</h1>
+    <SectionWrapper percentHeight id="experience">
+      <SectionHeader>Experience</SectionHeader>
       <ExperienceWrapper>
         <ExperienceCard>
           <ExperienceImg

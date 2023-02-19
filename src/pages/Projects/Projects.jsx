@@ -7,10 +7,11 @@ import {
   LiveDemoContainer,
   ProjectTitle,
   ProjectDescription,
-} from "./ProjectSliderElements";
+} from "./ProjectsElements";
 import { FaGithub, FaPlay } from "react-icons/fa";
 import AliceCarousel from "react-alice-carousel";
-import { SectionWrapper } from "../SectionWrapper/SectionWrapper";
+import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 const slides = sliderData.map((card) => {
   return (
@@ -52,7 +53,7 @@ const slides = sliderData.map((card) => {
 const ProjectSlider = () => {
   return (
     <SectionWrapper id="projects">
-      <h1>Projects</h1>
+      <SectionHeader>Projects</SectionHeader>
       <AliceCarousel items={slides} />
     </SectionWrapper>
   );
