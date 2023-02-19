@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Button } from "../../components/ButtonElement";
 import {
   ArrowForward,
   ArrowRight,
-  BlushLeft,
-  BlushRight,
   Crater1,
   Crater2,
   Crater3,
   Crater4,
   Crater5,
+  EyeBlock,
+  Face,
   HeroBtnWrapper,
   HeroContent,
   HeroContentWrapper,
@@ -24,12 +24,18 @@ import {
   Rocket,
   Shadow,
   UFO,
+  Balloon,
   Window,
+  Tongue,
 } from "./HeroElements";
 import ufo from "../../assests/images/ufo.svg";
+import balloon from "../../assests/images/balloon.svg";
 import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Hero = () => {
+  const { isDark } = useContext(ThemeContext);
+
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
@@ -38,7 +44,11 @@ const Hero = () => {
 
   return (
     <SectionWrapper id="hero">
-      <UFO src={ufo} alt="ufo" />
+      {isDark ? (
+        <UFO src={ufo} alt="ufo" />
+      ) : (
+        <Balloon src={balloon} alt="balloon" />
+      )}
       <HeroContent>
         <HeroContentWrapper>
           <HeroH1>
@@ -53,23 +63,29 @@ const Hero = () => {
         </HeroContentWrapper>
         <MoonContainer>
           <Moon>
-            <Crater1></Crater1>
-            <Crater2></Crater2>
-            <Crater3></Crater3>
-            <Crater4></Crater4>
-            <Crater5></Crater5>
-            <Shadow></Shadow>
-            <LeftEye></LeftEye>
-            <RightEye></RightEye>
-            <Mouth></Mouth>
-            <BlushLeft></BlushLeft>
-            <BlushRight></BlushRight>
+            <Face>
+              <EyeBlock>
+                <LeftEye />
+                <RightEye />
+              </EyeBlock>
+              <Mouth>
+                <Tongue />
+              </Mouth>
+            </Face>
+            <Crater1 />
+            <Crater2 />
+            <Crater3 />
+            <Crater4 />
+            <Crater5 />
+            <Shadow />
           </Moon>
-          <Orbit>
-            <Rocket>
-              <Window></Window>
-            </Rocket>
-          </Orbit>
+          {isDark && (
+            <Orbit>
+              <Rocket>
+                <Window></Window>
+              </Rocket>
+            </Orbit>
+          )}
         </MoonContainer>
       </HeroContent>
     </SectionWrapper>

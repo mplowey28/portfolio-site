@@ -2,13 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) =>
-    scrollNav ? "hsl(223,39%,12%)" : "rgba(255, 255, 255, 0.13)"};
+  background: ${({ isDark }) => (isDark ? "hsl(223,39%,12%)" : "#b6eaff")};
 
   backdrop-filter: blur(2px);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   height: 60px;
   margin-top: -60px;
+  padding: 0px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +35,6 @@ export const NavLogo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
 `;
@@ -87,13 +85,4 @@ export const NavLinks = styled(Link)`
   &:hover {
     color: var(--color-highlight);
   }
-`;
-
-export const LinkedIn = styled.img`
-  height: 40px;
-  width: 40px;
-`;
-export const GitHub = styled.img`
-  height: 40px;
-  width: 40px;
 `;

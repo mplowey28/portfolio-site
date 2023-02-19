@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import FooterImg from "../../assests/images/footer.svg";
+import DayFooterImg from "../../assests/images/dayfooter.svg";
 
 export const FooterContainer = styled.div`
   background: transparent;
 `;
 export const FooterWrapper = styled.div`
   position: fixed;
-  background: url(${FooterImg});
+  background: url(${({ dark }) => (dark ? FooterImg : DayFooterImg)});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +26,7 @@ export const FooterWrapper = styled.div`
     height: 230px;
   }
 `;
+
 export const LinksWrapper = styled.div`
   justify-content: center;
   align-items: center;
@@ -61,4 +63,8 @@ export const Telescope = styled.img`
     width: 40px;
     height: 40px;
   }
+`;
+
+export const Basket = styled(Telescope)`
+  position: absolute;
 `;

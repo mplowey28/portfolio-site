@@ -4,7 +4,6 @@ export const InfoWrapper = styled.div`
   background-color: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;

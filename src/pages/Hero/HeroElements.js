@@ -11,6 +11,35 @@ const flyby = keyframes`
   }
 `;
 
+const RotateEye = keyframes`
+0%,
+35% {
+  right: 3px;
+}
+65%,
+100% {
+  right: 10px;
+}
+`;
+
+const ScaleMouth = keyframes`
+  0% {
+    height: 18px;
+  }
+  100% {
+    height: 24px;
+  }
+  `;
+
+const ScaleTongue = keyframes`
+0% {
+  height: 16px;
+}
+100% {
+  height: 20px;
+}
+`;
+
 export const UFO = styled.img`
   z-index: 4;
   background: transparent;
@@ -22,11 +51,15 @@ export const UFO = styled.img`
   margin-top: 80px;
   animation: ${flyby} 45s linear infinite;
 `;
+
+export const Balloon = styled(UFO)`
+  animation: ${flyby} 200s linear infinite;
+`;
+
 export const HeroContent = styled.div`
   background-color: rgba(255, 255, 255, 0.13);
   backdrop-filter: blur(2px);
   border-radius: 10px;
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   -webkit-backdrop-filter: blur(2px);
   z-index: 3;
   max-width: 1200px;
@@ -104,6 +137,7 @@ export const Moon = styled.div`
   width: 170px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
 `;
 
 export const Crater1 = styled.div`
@@ -159,42 +193,74 @@ export const Shadow = styled.div`
   bottom: 157.5px;
   right: 46px;
 `;
-export const LeftEye = styled.div`
-  height: 12px;
-  width: 12px;
-  background-color: #161616;
+
+export const Face = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+`;
+
+export const EyeBlock = styled.div`
+  width: 80px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+`;
+
+export const LeftEye = styled.span`
+  background-color: #2e261a;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: inline-flex;
+  display: -webkit-inline-flex;
   position: relative;
-  border-radius: 50%;
-  bottom: 255px;
-  left: 59px;
+
+  :before {
+    content: "";
+    height: 6px;
+    width: 6px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: ${RotateEye} 4s ease-in-out alternate infinite;
+    -webkit-animation: ${RotateEye} 4s ease-in-out alternate infinite;
+  }
 `;
-export const RightEye = styled(LeftEye)`
-  border-radius: 50%;
-  bottom: 267px;
-  left: 101px;
-`;
+export const RightEye = styled(LeftEye)``;
+
 export const Mouth = styled.div`
-  height: 5px;
-  width: 10px;
-  border: 3px solid #161616;
-  position: relative;
-  bottom: 262px;
-  left: 82px;
-  border-top: none;
-  border-radius: 0 0 10px 10px;
+  width: 18px;
+  height: 18px;
+  background-color: #2f261a;
+  text-align: center;
+  margin: 0px auto;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 0px 0px 25px 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  top: 100%;
+  animation: ${ScaleMouth} 2s linear infinite;
+  -webkit-animation: ${ScaleMouth} 2s linear infinite;
 `;
-export const BlushLeft = styled.div`
-  height: 7.5px;
-  width: 7.5px;
-  background-color: #1ca4f9;
-  position: relative;
-  border-radius: 50%;
-  bottom: 273px;
-  left: 50px;
-`;
-export const BlushRight = styled(BlushLeft)`
-  bottom: 281px;
-  left: 115px;
+
+export const Tongue = styled.span`
+  width: 100%;
+  height: 16px;
+  background-color: #f54b2e;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  animation: ${ScaleTongue} 2s linear infinite;
+  -webkit-animation: ${ScaleTongue} 2s linear infinite;
 `;
 
 const spin = keyframes`

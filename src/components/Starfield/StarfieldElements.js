@@ -9,3 +9,7 @@ export const StarfieldCanvas = styled.div`
   height: 100%;
   overflow: hidden;
 `;
+
+export const Gradient = styled(StarfieldCanvas)`
+  background: linear-gradient(180deg, #b6eaff, #94dfff);
+`;

@@ -1,122 +1,100 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-import linkedin from "../../assests/images/linkedin.svg";
-import github from "../../assests/images/github.svg";
 import {
-	Nav,
-	NavbarContainer,
-	NavLogo,
-	MobileIcon,
-	NavMenu,
-	NavItem,
-	NavLinks,
-	LinkedIn,
-	GitHub,
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
 } from "./NavbarElements";
+import Toggle from "../Toggle/Toggle";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Navbar = ({ toggle }) => {
-	const [scrollNav, setScrollNav] = useState(false);
+  const { isDark } = useContext(ThemeContext);
 
-	const changeNav = () =>
-		window.scrollY >= 60 ? setScrollNav(true) : setScrollNav(false);
+  const toggleHome = () => scroll.scrollToTop();
 
-	const toggleHome = () => scroll.scrollToTop();
-
-	useEffect(() => {
-		window.addEventListener("scroll", changeNav);
-	}, []);
-
-	return (
-		<>
-			<Nav scrollNav={scrollNav}>
-				<NavbarContainer>
-					<NavLogo to='hero' onClick={toggleHome}>
-						Matthew Plowey
-					</NavLogo>
-					<MobileIcon onClick={toggle}>
-						<FaBars />
-					</MobileIcon>
-					<NavMenu>
-						<NavItem>
-							<NavLinks
-								to='about'
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact='true'
-								offset={-60}
-							>
-								About
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
-								to='projects'
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact='true'
-								offset={-60}
-							>
-								Projects
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
-								to='skills'
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact='true'
-								offset={-60}
-							>
-								Skills
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
-								to='experience'
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact='true'
-								offset={-60}
-							>
-								Experience
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
-								to='contact'
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact='true'
-								offset={-60}
-							>
-								Contact
-							</NavLinks>
-						</NavItem>
-						<a
-							href='https://www.linkedin.com/in/matthew-plowey'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<LinkedIn src={linkedin} />
-						</a>
-						<a
-							href='https://www.github.com/mplowey28'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<GitHub src={github} />
-						</a>
-					</NavMenu>
-				</NavbarContainer>
-			</Nav>
-		</>
-	);
+  return (
+    <>
+      <Nav isDark={isDark}>
+        <NavbarContainer>
+          <NavLogo to="hero" onClick={toggleHome}>
+            Matthew Plowey
+          </NavLogo>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-60}
+              >
+                About
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-60}
+              >
+                Projects
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="skills"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-60}
+              >
+                Skills
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="experience"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-60}
+              >
+                Experience
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-60}
+              >
+                Contact
+              </NavLinks>
+            </NavItem>
+            <Toggle />
+          </NavMenu>
+        </NavbarContainer>
+      </Nav>
+    </>
+  );
 };
 
 export default Navbar;

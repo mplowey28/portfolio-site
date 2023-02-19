@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SectionWrapper = styled.div`
   height: ${({ percentHeight }) => (percentHeight ? "100%" : "100vh")};
   display: flex;
+  padding: 10rem 24px;
   padding-top: 10rem;
   padding-right: 24px;
   padding-left: 24px;

@@ -1,37 +1,5 @@
 import styled from "styled-components";
 
-export const ProjectCardsWrapper = styled.div`
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 16px;
-
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-export const ProjectCard = styled.div`
-  color: var(--color-text);
-  background-color: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(2px);
-  border-radius: 10px;
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  -webkit-backdrop-filter: blur(2px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
-`;
-
 export const ProjectTitle = styled.h2`
   color: var(--color-text);
   font-size: 1.25rem;
@@ -44,6 +12,7 @@ export const ProjectImgLink = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-bottom: 24px;
 
   img {
     height: 200px;
@@ -60,11 +29,6 @@ export const ProjectImgLink = styled.div`
       height: 100px;
     }
   }
-`;
-
-export const ProjectDescription = styled.div`
-  padding: 2rem;
-  text-align: justify;
 `;
 
 export const LinkContainer = styled.div`

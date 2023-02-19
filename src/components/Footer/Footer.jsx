@@ -1,4 +1,6 @@
+import React, { useContext } from "react";
 import {
+  Basket,
   FooterContainer,
   FooterWrapper,
   Telescope,
@@ -11,11 +13,15 @@ import {
 import linkedin from "../../assests/images/linkedin.svg";
 import github from "../../assests/images/github.svg";
 import telescope from "../../assests/images/telescope.svg";
+import basket from "../../assests/images/basket.svg";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Footer = () => {
+  const { isDark } = useContext(ThemeContext);
+
   return (
     <FooterContainer>
-      <FooterWrapper>
+      <FooterWrapper dark={isDark}>
         <FooterInfo>
           <LinksWrapper>
             <a
@@ -38,7 +44,11 @@ const Footer = () => {
             Plowey 2023
           </FooterText>
         </FooterInfo>
-        <Telescope src={telescope} alt="telescope" />
+        {isDark ? (
+          <Telescope src={telescope} alt="telescope" />
+        ) : (
+          <Basket src={basket} alt="basket" />
+        )}
       </FooterWrapper>
     </FooterContainer>
   );
