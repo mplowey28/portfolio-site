@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
+import { ThemeProvider } from "./context/ThemeContext";
 
 import Home from "./pages";
 
@@ -28,10 +29,12 @@ const GlobalStyles = createGlobalStyle`
 
 const App = () => {
   return (
-    <Router>
-      <GlobalStyles />
-      <Home />
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <GlobalStyles />
+        <Home />
+      </Router>
+    </ThemeProvider>
   );
 };
 
