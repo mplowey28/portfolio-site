@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import { homeObjOne } from "./About/Data";
-import Navbar from "../components/Navbar";
-import SideBar from "../components/SideBar";
+import Navbar from "../components/Navbar/Navbar";
+import SideBar from "../components/SideBar/Sidebar";
 import Skills from "./Skills/Skills";
 import Footer from "../components/Footer/Footer";
 import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
-import Starfield from "../components/Starfield";
+import Starfield from "../components/Starfield/Starfield";
 import ProjectSlider from "./Projects/Projects";
 
 const Home = () => {

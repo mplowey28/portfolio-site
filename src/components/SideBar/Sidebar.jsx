@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import linkedin from "../../assests/images/linkedin.svg";
 import github from "../../assests/images/github.svg";
 import {
@@ -11,10 +12,13 @@ import {
   LinkedIn,
   GitHub,
 } from "./SideBarElements";
+import Toggle from "../Toggle/Toggle";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const SideBar = ({ isOpen, toggle }) => {
+  const { isDark } = useContext(ThemeContext);
   return (
-    <SideBarContainer isOpen={isOpen}>
+    <SideBarContainer isOpen={isOpen} isDark={isDark}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -51,6 +55,7 @@ const SideBar = ({ isOpen, toggle }) => {
               <GitHub src={github} />
             </a>
           </LinksWrapper>
+          <Toggle />
         </SideBarMenu>
       </SideBarWrapper>
     </SideBarContainer>

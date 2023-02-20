@@ -7,7 +7,10 @@ export const SideBarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: var(--color-background);
+  background: ${({ isDark }) =>
+    isDark
+      ? "var(--color-background)"
+      : "linear-gradient(180deg, #b6eaff, #94dfff)"};
   display: grid;
   align-items: center;
   top: 0;
