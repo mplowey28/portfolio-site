@@ -167,7 +167,7 @@ export const CloudContent = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: 3;
 `;
 
 export const CloudBlock = styled.div`
