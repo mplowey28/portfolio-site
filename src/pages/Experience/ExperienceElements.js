@@ -22,7 +22,6 @@ export const ExperienceCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
-  margin-bottom: 20px;
 `;
 
 export const ExperienceH2 = styled.h2`

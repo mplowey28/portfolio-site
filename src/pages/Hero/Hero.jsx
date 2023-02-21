@@ -3,6 +3,14 @@ import { Button } from "../../components/ButtonElement";
 import {
   ArrowForward,
   ArrowRight,
+  Cloud,
+  CloudContent,
+  CloudBlock2,
+  CloudBlock3,
+  CloudBlock4,
+  CloudBlock5,
+  CloudBlock6,
+  CloudBlock7,
   Crater1,
   Crater2,
   Crater3,
@@ -54,6 +62,28 @@ const Hero = () => {
         <UFO src={ufo} alt="ufo" />
       ) : (
         <Balloon src={balloon} alt="balloon" />
+      )}
+      {!isDark && (
+        <CloudContent>
+          <CloudBlock2>
+            <Cloud />
+          </CloudBlock2>
+          <CloudBlock3>
+            <Cloud />
+          </CloudBlock3>
+          <CloudBlock4>
+            <Cloud />
+          </CloudBlock4>
+          <CloudBlock5>
+            <Cloud />
+          </CloudBlock5>
+          <CloudBlock6>
+            <Cloud />
+          </CloudBlock6>
+          <CloudBlock7>
+            <Cloud />
+          </CloudBlock7>
+        </CloudContent>
       )}
       <HeroContent>
         <HeroContentWrapper>

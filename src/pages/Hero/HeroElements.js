@@ -47,6 +47,102 @@ const ScaleTongue = keyframes`
   height: 20px;
 }
 `;
+const Animate1 = keyframes`
+0% {
+  left: 90%;
+}
+10% {
+  left: 110%;
+}
+10.001% {
+  left: -10%;
+}
+100% {
+  left: 90%;
+}
+`;
+const Animate2 = keyframes`
+0% {
+  left: 75%;
+}
+25% {
+  left: 110%;
+}
+25.001% {
+  left: -10%;
+}
+100% {
+  left: 75%;
+}
+`;
+const Animate3 = keyframes`
+0% {
+  left: 60%;
+}
+40% {
+  left: 110%;
+}
+40.001% {
+  left: -10%;
+}
+100% {
+  left: 60%;
+}
+`;
+const Animate4 = keyframes`
+0% {
+  left: 45%;
+}
+55% {
+  left: 110%;
+}
+55.001% {
+  left: -10%;
+}
+100% {
+  left: 45%;
+}
+`;
+const Animate5 = keyframes`
+0% {
+  left: 30%;
+}
+70% {
+  left: 110%;
+}
+70.001% {
+  left: -10%;
+}
+100% {
+  left: 30%;
+}
+`;
+const Animate6 = keyframes`
+0% {
+  left: 10%;
+}
+90% {
+  left: 110%;
+}
+90.001% {
+  left: -10%;
+}
+100% {
+  left: 10%;
+}
+`;
+const Animate7 = keyframes`
+0% {
+  left: -10%;
+}
+
+99.99% {
+  left: 110%;
+}
+100% {
+  left: -10%;
+}
+`;
 
 export const UFO = styled.img`
   z-index: 4;
@@ -62,6 +158,100 @@ export const UFO = styled.img`
 
 export const Balloon = styled(UFO)`
   animation: ${flyby} 200s linear infinite;
+`;
+
+export const CloudContent = styled.div`
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+`;
+
+export const CloudBlock = styled.div`
+  position: absolute;
+  opacity: 0.8;
+  top: 100px;
+  animation: ${Animate1} 32s linear infinite;
+  -webkit-animation: ${Animate1} 32s linear infinite;
+  transform: scale(0.65);
+  -webkit-transform: scale(0.65);
+`;
+export const CloudBlock2 = styled(CloudBlock)`
+  top: 40vh;
+  animation: ${Animate2} 37s linear infinite;
+  -webkit-animation: ${Animate2} 37s linear infinite;
+  transform: scale(0.45);
+  -webkit-transform: scale(0.45);
+`;
+export const CloudBlock3 = styled(CloudBlock)`
+  top: 20vh;
+  animation: ${Animate3} 45s linear infinite;
+  -webkit-animation: ${Animate3} 45s linear infinite;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+`;
+export const CloudBlock4 = styled(CloudBlock)`
+  top: 50vh;
+  animation: ${Animate4} 50s linear infinite;
+  -webkit-animation: ${Animate4} 50s linear infinite;
+  transform: scale(0.4);
+  -webkit-transform: scale(0.4);
+`;
+export const CloudBlock5 = styled(CloudBlock)`
+  animation: ${Animate5} 55s linear infinite;
+  -webkit-animation: ${Animate5} 55s linear infinite;
+  transform: scale(0.55);
+  -webkit-transform: scale(0.55);
+  top: 65vh;
+`;
+export const CloudBlock6 = styled(CloudBlock)`
+  animation: ${Animate6} 60s linear infinite;
+  -webkit-animation: ${Animate6} 60s linear infinite;
+  transform: scale(0.45);
+  -webkit-transform: scale(0.45)7
+  top: 35vh;
+`;
+export const CloudBlock7 = styled(CloudBlock)`
+  animation: ${Animate7} 65s linear infinite;
+  -webkit-animation: ${Animate7} 65s linear infinite;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  bottom: 30px;
+`;
+
+export const Cloud = styled.div`
+  width: 350px;
+  height: 120px;
+  border-radius: 100px;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #fff;
+  :before {
+    background: #fff;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 180px;
+    height: 180px;
+    right: 50px;
+    top: -90px;
+    border-radius: 200px;
+  }
+  :after {
+    background: #fff;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    border-radius: 100px;
+  }
 `;
 
 export const HeroContent = styled.div`
