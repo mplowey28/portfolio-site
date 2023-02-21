@@ -23,13 +23,6 @@ export const ExperienceCard = styled.div`
   align-items: center;
   padding: 1rem;
   margin-bottom: 20px;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
 `;
 
 export const ExperienceH2 = styled.h2`
