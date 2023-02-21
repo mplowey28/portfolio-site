@@ -22,6 +22,14 @@ const RotateEye = keyframes`
 }
 `;
 
+const Rotate = keyframes`
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}`;
+
 const ScaleMouth = keyframes`
   0% {
     height: 18px;
@@ -131,12 +139,76 @@ export const MoonContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const Sun = styled.div`
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  background-color: #fcc952;
+  background-image: linear-gradient(
+    145deg,
+    rgba(252, 201, 82, 1) 0%,
+    rgba(252, 201, 82, 1) 61%,
+    rgba(248, 160, 55, 1) 100%
+  );
+  -webkit-background-image: linear-gradient(
+    145deg,
+    rgba(252, 201, 82, 1) 0%,
+    rgba(252, 201, 82, 1) 61%,
+    rgba(248, 160, 55, 1) 100%
+  );
+  box-shadow: inset 2px 2px 8px 0 rgba(252, 201, 82, 0),
+    inset -3px -3px 8px 0 rgba(245, 169, 76, 0),
+    6px 6px 18px 0 rgba(204, 123, 35, 0.35),
+    -6px -6px 18px 0 rgba(205, 157, 35, 0.5);
+  -webkit-box-shadow: inset 2px 2px 8px 0 rgba(252, 201, 82, 0),
+    inset -3px -3px 8px 0 rgba(245, 169, 76, 0),
+    6px 6px 18px 0 rgba(204, 123, 35, 0.35),
+    -6px -6px 18px 0 rgba(205, 157, 35, 0.5);
+  position: relative;
+`;
+
+export const SunlightBox = styled.div`
+  position: absolute;
+  filter: drop-shadow(0px 0px 12px rgba(252, 201, 82, 0.8));
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: ${Rotate} 20s linear infinite;
+  -webkit-animation: ${Rotate} 20s linear infinite;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+`;
+
+export const SunlightBox1 = styled.span`
+  height: 170px;
+  width: 170px;
+  background-color: #f8a037;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+`;
+export const SunlightBox2 = styled(SunlightBox1)`
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+`;
+export const SunlightBox3 = styled(SunlightBox1)`
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+`;
+
 export const Moon = styled.div`
   background-color: #39beff;
   height: 170px;
   width: 170px;
   border-radius: 50%;
   overflow: hidden;
+  position: relative;
+`;
+export const SunContainer = styled.div`
   position: relative;
 `;
 

@@ -23,6 +23,12 @@ import {
   RightEye,
   Rocket,
   Shadow,
+  Sun,
+  SunContainer,
+  SunlightBox,
+  SunlightBox1,
+  SunlightBox2,
+  SunlightBox3,
   UFO,
   Balloon,
   Window,
@@ -62,29 +68,50 @@ const Hero = () => {
           </HeroBtnWrapper>
         </HeroContentWrapper>
         <MoonContainer>
-          <Moon>
-            <Face>
-              <EyeBlock>
-                <LeftEye />
-                <RightEye />
-              </EyeBlock>
-              <Mouth>
-                <Tongue />
-              </Mouth>
-            </Face>
-            <Crater1 />
-            <Crater2 />
-            <Crater3 />
-            <Crater4 />
-            <Crater5 />
-            <Shadow />
-          </Moon>
-          {isDark && (
-            <Orbit>
-              <Rocket>
-                <Window></Window>
-              </Rocket>
-            </Orbit>
+          {isDark ? (
+            <>
+              <Moon>
+                <Face>
+                  <EyeBlock>
+                    <LeftEye />
+                    <RightEye />
+                  </EyeBlock>
+                  <Mouth>
+                    <Tongue />
+                  </Mouth>
+                </Face>
+                <Crater1 />
+                <Crater2 />
+                <Crater3 />
+                <Crater4 />
+                <Crater5 />
+                <Shadow />
+              </Moon>
+              <Orbit>
+                <Rocket>
+                  <Window />
+                </Rocket>
+              </Orbit>
+            </>
+          ) : (
+            <SunContainer>
+              <SunlightBox>
+                <SunlightBox1 />
+                <SunlightBox2 />
+                <SunlightBox3 />
+              </SunlightBox>
+              <Sun>
+                <Face>
+                  <EyeBlock>
+                    <LeftEye />
+                    <RightEye />
+                  </EyeBlock>
+                  <Mouth>
+                    <Tongue />
+                  </Mouth>
+                </Face>
+              </Sun>
+            </SunContainer>
           )}
         </MoonContainer>
       </HeroContent>
