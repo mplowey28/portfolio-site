@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Button } from "../../components/ButtonElement";
+import Card from "../../components/Card/Card";
 import {
   ArrowForward,
   ArrowRight,
@@ -19,7 +20,6 @@ import {
   EyeBlock,
   Face,
   HeroBtnWrapper,
-  HeroContent,
   HeroContentWrapper,
   HeroH1,
   LeftEye,
@@ -85,7 +85,7 @@ const Hero = () => {
           </CloudBlock7>
         </CloudContent>
       )}
-      <HeroContent>
+      <Card direction="row">
         <HeroContentWrapper>
           <HeroH1>
             Hello, my name is <NameSpan>Matthew</NameSpan> and I am a full-stack
@@ -144,7 +144,7 @@ const Hero = () => {
             </SunContainer>
           )}
         </MoonContainer>
-      </HeroContent>
+      </Card>
     </SectionWrapper>
   );
 };

@@ -7,13 +7,13 @@ import {
   ProjectTitle,
 } from "./ProjectsElements";
 import {
-  ExperienceCard,
   ExperienceH2,
   ExperienceWrapper,
 } from "../Experience/ExperienceElements";
 import { FaGithub, FaPlay } from "react-icons/fa";
 import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
+import Card from "../../components/Card/Card";
 
 const ProjectSlider = () => {
   return (
@@ -22,7 +22,7 @@ const ProjectSlider = () => {
       <ExperienceWrapper>
         {sliderData.map((card) => {
           return (
-            <ExperienceCard key={card.title}>
+            <Card flexValue key={card.title}>
               <ProjectTitle>{card.title}</ProjectTitle>
               <ProjectImgLink>
                 {card.type === "img" ? (
@@ -59,7 +59,7 @@ const ProjectSlider = () => {
                   </LiveDemoContainer>
                 )}
               </LinkContainer>
-            </ExperienceCard>
+            </Card>
           );
         })}
       </ExperienceWrapper>

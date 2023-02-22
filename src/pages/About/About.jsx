@@ -1,20 +1,15 @@
 import photo from "../../assests/images/me.jpg";
 import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
+import Card from "../../components/Card/Card";
 
-import {
-  InfoWrapper,
-  TextWrapper,
-  SubTitle,
-  ImgWrap,
-  Img,
-} from "./AboutElements";
+import { TextWrapper, SubTitle, ImgWrap, Img } from "./AboutElements";
 
 const About = ({ id, headline, alt }) => {
   return (
     <SectionWrapper percentHeight id={id}>
       <SectionHeader>{headline}</SectionHeader>
-      <InfoWrapper>
+      <Card direction="row">
         <ImgWrap>
           <Img src={photo} alt={alt} />
         </ImgWrap>
@@ -30,7 +25,7 @@ const About = ({ id, headline, alt }) => {
             and services that are both user-friendly and visually appealing.
           </SubTitle>
         </TextWrapper>
-      </InfoWrapper>
+      </Card>
     </SectionWrapper>
   );
 };

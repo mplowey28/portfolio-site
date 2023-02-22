@@ -12,6 +12,8 @@ export const ContactForm = styled.form`
   display: grid;
   margin: 0 auto;
   padding: 1rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
   @media screen and (max-width: 400px) {
     padding: 30px;

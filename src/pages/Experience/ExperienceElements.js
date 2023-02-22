@@ -11,19 +11,6 @@ export const ExperienceWrapper = styled.div`
   }
 `;
 
-export const ExperienceCard = styled.div`
-  flex: 1;
-  background-color: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(2px);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(2px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem;
-`;
-
 export const ExperienceH2 = styled.h2`
   color: var(--color-text);
   font-size: 1rem;

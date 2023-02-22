@@ -254,23 +254,6 @@ export const Cloud = styled.div`
   }
 `;
 
-export const HeroContent = styled.div`
-  background-color: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(2px);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(2px);
-  z-index: 3;
-  max-width: 1200px;
-  display: flex;
-  direction: row;
-  align-items: center;
-  text-align: center;
-
-  @media screen and (max-width: 875px) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-`;
 export const HeroContentWrapper = styled.div`
   background: transparent;
   z-index: 3;
