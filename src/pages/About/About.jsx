@@ -2,16 +2,17 @@ import photo from "../../assests/images/me.jpg";
 import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import Card from "../../components/Card/Card";
+import { homeObjOne } from "./data";
 
 import { TextWrapper, SubTitle, ImgWrap, Img } from "./AboutElements";
 
-const About = ({ id, headline, alt }) => {
+const About = () => {
   return (
-    <SectionWrapper percentHeight id={id}>
-      <SectionHeader>{headline}</SectionHeader>
+    <SectionWrapper percentHeight id={homeObjOne.id}>
+      <SectionHeader>{homeObjOne.headline}</SectionHeader>
       <Card direction="row">
         <ImgWrap>
-          <Img src={photo} alt={alt} />
+          <Img src={photo} alt={homeObjOne.alt} />
         </ImgWrap>
         <TextWrapper>
           <SubTitle>
