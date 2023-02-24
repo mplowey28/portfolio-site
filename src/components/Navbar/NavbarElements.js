@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${({ isDark }) => (isDark ? "hsl(223,39%,12%)" : "#b6eaff")};
-
   backdrop-filter: blur(2px);
   height: 60px;
   margin-top: -60px;
@@ -48,7 +47,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
   }

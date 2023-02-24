@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionWrapper = styled.div`
+export const SectionWrapper = styled.section`
   height: ${({ percentHeight }) => (percentHeight ? "100%" : "100vh")};
   display: flex;
   padding: 10rem 24px;
