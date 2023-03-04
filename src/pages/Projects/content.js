@@ -1,5 +1,13 @@
 export const sliderData = [
   {
+    title: "Portfolio Site Refresh - Feb 2023",
+    desc: "A refresh of my portfolio site. Built with React and Styled components Hosted on Netlify. I've added a light and dark mode toggle, a new design, and have updated my experience and projects.",
+    image: require("../../videos/portfoliosite.gif"),
+    type: "img",
+    github: "https://github.com/mplowey28/portfolio-site",
+    demo: "https://matthewplowey.com",
+  },
+  {
     title: "CryptoChartsPro - Jan 2021",
     desc: "A responsive web app that allows user to monitor the changing cryptocurrency market. Built with React, Tailwind, and Chart.js. Hosted on Netlify.",
     image: require("../../assests/images/cryptocharts.png"),
