@@ -1,7 +1,7 @@
 export const sliderData = [
   {
     title: "CryptoChartsPro - Jan 2021",
-    desc: "A responsive web app that allows user to monitor the changing cryptocurrency market.",
+    desc: "A responsive web app that allows user to monitor the changing cryptocurrency market. Built with React, Tailwind, and Chart.js. Hosted on Netlify.",
     image: require("../../assests/images/cryptocharts.png"),
     type: "img",
     github: "https://github.com/mplowey28/CryptoChartsPro",
