@@ -5,11 +5,9 @@ import {
   LinkContainer,
   LiveDemoContainer,
   ProjectTitle,
+  ProjectsWrapper,
 } from "./ProjectsElements";
-import {
-  ExperienceH2,
-  ExperienceWrapper,
-} from "../Experience/ExperienceElements";
+import { ExperienceH2 } from "../Experience/ExperienceElements";
 import { FaGithub, FaPlay } from "react-icons/fa";
 import { SectionWrapper } from "../../components/SectionWrapper/SectionWrapper";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
@@ -19,7 +17,7 @@ const ProjectSlider = () => {
   return (
     <SectionWrapper percentHeight id="projects">
       <SectionHeader>Projects</SectionHeader>
-      <ExperienceWrapper>
+      <ProjectsWrapper>
         {sliderData.map((card) => {
           return (
             <Card flexValue key={card.title}>
@@ -62,7 +60,7 @@ const ProjectSlider = () => {
             </Card>
           );
         })}
-      </ExperienceWrapper>
+      </ProjectsWrapper>
     </SectionWrapper>
   );
 };

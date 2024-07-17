@@ -77,18 +77,6 @@ const Navbar = ({ toggle }) => {
                 Experience
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-60}
-              >
-                Contact
-              </NavLinks>
-            </NavItem>
             <Toggle />
           </NavMenu>
         </NavbarContainer>

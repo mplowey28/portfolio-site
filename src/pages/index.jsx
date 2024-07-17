@@ -6,7 +6,6 @@ import SideBar from "../components/SideBar/Sidebar";
 import Skills from "./Skills/Skills";
 import Footer from "../components/Footer/Footer";
 import Experience from "./Experience/Experience";
-import Contact from "./Contact/Contact";
 import Starfield from "../components/Starfield/Starfield";
 import ProjectSlider from "./Projects/Projects";
 
@@ -27,7 +26,6 @@ const Home = () => {
       <ProjectSlider />
       <Skills />
       <Experience />
-      <Contact />
       <Footer />
     </>
   );

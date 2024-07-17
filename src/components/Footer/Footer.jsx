@@ -41,7 +41,7 @@ const Footer = () => {
           </LinksWrapper>
           <FooterText>
             <span dangerouslySetInnerHTML={{ __html: "&copy;" }} /> Matthew
-            Plowey 2023
+            Plowey 2024
           </FooterText>
         </FooterInfo>
         {isDark ? (

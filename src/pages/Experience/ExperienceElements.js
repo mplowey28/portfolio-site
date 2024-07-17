@@ -5,9 +5,11 @@ export const ExperienceWrapper = styled.div`
   display: inline-flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-bottom: 500px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding-bottom: 200px;
   }
 `;
 

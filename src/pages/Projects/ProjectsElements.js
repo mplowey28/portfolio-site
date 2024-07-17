@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const ProjectsWrapper = styled.div`
+  max-width: 1200px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 export const ProjectTitle = styled.h2`
   color: var(--color-text);
   font-size: 1.25rem;
